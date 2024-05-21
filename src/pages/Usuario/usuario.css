@@ -1,0 +1,53 @@
+.app-container {
+    max-width: 600px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+    padding: 20px; /* Espaçamento interno do contêiner */
+    
+  }
+
+/* Estilo para o grupo de formulário */
+.form-group {
+    max-width: 400px; /* Largura máxima do grupo de formulário */
+    margin: 0 auto; /* Centraliza o grupo de formulário na página */
+    padding: 20px; /* Espaçamento interno do grupo de formulário */
+    border: 1px solid #ccc; /* Borda sólida com cor cinza */
+    border-radius: 8px; /* Borda arredondada */
+  }
+  
+  /* Estilo para os campos de entrada de texto */
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    width: 100%; /* Largura total do campo de entrada */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    padding: 10px; /* Espaçamento interno do campo */
+    border: 1px solid #ccc; /* Borda sólida com cor cinza */
+    border-radius: 4px; /* Borda arredondada */
+  }
+  
+  /* Estilo para o botão de envio */
+  .form-group button {
+    width: 100%; /* Largura total do botão */
+    padding: 10px; /* Espaçamento interno do botão */
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Borda arredondada */
+    cursor: pointer; /* Cursor de ponteiro ao passar por cima */
+  }
+  
+  /* Estilo para o link de esqueceu a senha */
+  .form-group .forgot-password {
+    text-align: right; /* Alinha o texto à direita */
+  }
+  
+  /* Estilo para as mensagens de erro */
+  .form-group .error-message {
+    color: red; /* Cor do texto vermelho */
+  }
+
+
+/* Estilo para o link de esqueceu a senha */
+#app-container .forgot-password {
+  text-align: right; /* Alinha o texto à direita */
+}
