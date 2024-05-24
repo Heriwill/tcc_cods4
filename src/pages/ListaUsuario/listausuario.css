@@ -1,0 +1,48 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+  }
+ 
+  /* Estilos para o container da lista */
+  .list-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+ 
+  /* Estilos para a lista */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+ 
+  /* Estilos para os itens da lista */
+  li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+ 
+  /* Estilo ao passar o mouse sobre um item da lista */
+  li:hover {
+    background-color: #e0e0e0;
+  }
+ 
+  /* Estilo para mensagens de carregamento e erro */
+  .message {
+    text-align: center;
+    color: #666;
+  }
+ 
+  .message.error {
+    color: #d9534f;
+  }

@@ -10,6 +10,7 @@ function Home(){
       <>  
         <div>
            <img src="../imgfundo.jpeg" alt="" />
+           <section className='texto1'>ssssss</section>
            <h1 className='titulo'>Projeto Academia</h1>
            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ratione soluta, nobis alias sint modi, ipsam accusamus fugit sit ex consequatur. Doloremque voluptatem omnis, eum quasi facilis porro quisquam totam?</h2>
 
@@ -22,8 +23,8 @@ function Home(){
         <CardGroup>
       <Card>
         <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>XXXXXXXX</Card.Title>
+        <Card.Body className='corpocarde'>
+          <Card.Title className='cardetitulo'>XXXXXXXX</Card.Title>
           <Card.Text>
             This is a wider card with supporting text below as a natural lead-in
             to additional content. This content is a little bit longer.

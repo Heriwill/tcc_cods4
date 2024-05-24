@@ -11,17 +11,6 @@ const[ nome, setNome] = useState('')  //set é para 'passar o valor'
 const[ email, setEmail] = useState('') //depois, se precisar é só mudar o nome, email etc. para o q tiver na api  
 const[ senha, setSenha] = useState('')
 
-const handleNome = (e) => { // 'e' é uma letra aleatoria para ser uma variavel 
-  setNome(e.target.value)
-}
-
-const handleEmail = (e) => {
-  setEmail(e.target.value)
-}
-
-const handleSenha = (e) => {
-  setSenha(e.target.value)
-}
 
 const handleSubmit = async () => {
 try { //tente fazer isso
@@ -37,17 +26,17 @@ try { //tente fazer isso
     <div className="app-container">
       <div className="form-group">
         <label>Nome</label>
-        <input type="text" placeholder="Seu Nome"  onChange={handleNome} /> 
+        <input type="text" placeholder="Seu Nome"  onChange={(e)=> setNome(e.target.value)}/> 
       </div>
 
       <div className="form-group">
         <label>E-mail</label>
-        <input type="email" placeholder="Seu Email"  onChange={handleEmail} /> 
+        <input type="email" placeholder="Seu Email"  onChange={(e) => setEmail(e.target.value)} /> 
       </div>
 
       <div className="form-group">
         <label>Senha</label>
-        <input type="password" placeholder="Sua Senha"  onChange={handleSenha} /> 
+        <input type="password" placeholder="Sua Senha"  onChange={(e) => setSenha(e.target.value)} /> 
       </div>
       
 
