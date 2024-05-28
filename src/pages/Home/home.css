@@ -35,3 +35,8 @@ h1{
 .cardetitulo{
     color: plum;
 }
+
+.cardetextoo{
+    background-color: #000;
+    color: firebrick;
+}

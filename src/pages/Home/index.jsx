@@ -9,8 +9,8 @@ function Home(){
     return(
       <>  
         <div>
-           <img src="../imgfundo.jpeg" alt="" />
-           <section className='texto1'>ssssss</section>
+           <img src="../images/imgfundo.jpeg" alt="" />
+          <div className='texto1'>teste pq sim</div>
            <h1 className='titulo'>Projeto Academia</h1>
            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ratione soluta, nobis alias sint modi, ipsam accusamus fugit sit ex consequatur. Doloremque voluptatem omnis, eum quasi facilis porro quisquam totam?</h2>
 
@@ -19,10 +19,25 @@ function Home(){
         </div>
         <p></p><br />
 
+        <div  className='cardetextoo'>
+        <Card border="primary" style={{ width: '18rem' }}>
+        <Card.Header>Header</Card.Header>
+        <Card.Body>
+          <Card.Title>Primary Card Title</Card.Title>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      </div>
+      <br />
+
+
         <div>
         <CardGroup>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src="../images/imgcarde1.jpeg" />
         <Card.Body className='corpocarde'>
           <Card.Title className='cardetitulo'>XXXXXXXX</Card.Title>
           <Card.Text>
@@ -35,7 +50,7 @@ function Home(){
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src="../images/imgcarde2.jpeg" />
         <Card.Body>
           <Card.Title>cadastre-se</Card.Title>
           <Card.Text>
@@ -44,11 +59,11 @@ function Home(){
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
+          <small className="text-muted">PowerFlex Academy</small>
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src="../images/imgcarde1.jpeg" />
         <Card.Body>
           <Card.Title>Acesse o App</Card.Title>
           <Card.Text>
@@ -62,8 +77,13 @@ function Home(){
         </Card.Footer>
       </Card>
     </CardGroup>
-            </div>
-        </>   
+          </div>
+    
+
+
+     
+
+    </>   
     )
 
 
