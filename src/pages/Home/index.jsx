@@ -11,7 +11,7 @@ function Home(){
     return(
       <>  
         
-           <img src="../images/imgfundo.jpeg" alt="" />
+           <img src="../images/imgfundo.jpeg" id='imgtopo'/>
 
            
            <h1 id='titulo'>PowerFlex Academy
@@ -42,7 +42,7 @@ function Home(){
 
       <img src="../images/imgcarde2.jpeg" id='imgmeio'/>
 
-      <Card border="primary" className='cardedireita' >
+      <Card border="primary" className='cardedireita1' >
         <Card.Header>Header, mudar para esquerda da margem</Card.Header>
         <Card.Body className='cardecorpo'>
           <Card.Title>Primary Card Title</Card.Title>
@@ -55,7 +55,7 @@ function Home(){
     
     <br />
 
-    <Card border="primary" className='cardedireita' >
+    <Card border="primary" className='cardedireita2' >
         <Card.Header>Header</Card.Header>
         <Card.Body className='cardecorpo'>
           <Card.Title>Primary Card Title</Card.Title>
@@ -68,7 +68,7 @@ function Home(){
 
     <br />
 
-    <Card border="primary" style={{ width: '18rem' }} >
+    <Card border="primary" style={{ width: '18rem' }} id='cardeesquerda2'>
         <Card.Header>Header</Card.Header>
         <Card.Body className='cardecorpo'>
           <Card.Title>Primary Card Title</Card.Title>
@@ -98,6 +98,7 @@ function Home(){
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
+
       <Card>
         <Card.Img variant="top" src="../images/imgcarde2.jpeg" heref=""/>
         <Card.Body className='cardecorpo'>
@@ -113,6 +114,7 @@ function Home(){
           <small className="text-muted">PowerFlex Academy</small>
         </Card.Footer>
       </Card>
+
       <Card>
         <Card.Img variant="top" src="../images/imgcarde1.jpeg" />
         <Card.Body className='cardecorpo'>

@@ -1,4 +1,4 @@
-img{
+#imgtopo{
     width: 50%;
     margin-top: 10px;
     border-radius: 10px;
@@ -39,15 +39,35 @@ img{
     
 }
 */
-.cardedireita{
+.cardedireita1{
     margin-left: 77%;
-    margin-top: -208px;
+    margin-top: -650px;
     width: 22%;
-    padding-left: 10%;
+  
+}
+
+.cardedireita2{
+    margin-left: 77%;
+    margin-top: 500px;
+    width: 22%;
+    
       
 }
+
+#cardeesquerda2{
+    margin-top: -207px;
+
+}
+
 #imgmeio{
     width: 50%;
+    margin-top: 10px;
+    margin-left: 25%;
+    border-radius: 10px;
+    border-style: outset;
+    border-color: gray;
+    
+   --image-rendering: optimizeSpeed;
     
 
 }
