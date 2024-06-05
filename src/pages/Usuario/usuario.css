@@ -35,6 +35,12 @@
     border-radius: 4px; /* Borda arredondada */
     cursor: pointer; /* Cursor de ponteiro ao passar por cima */
   }
+
+  .form-group button:hover {
+    
+    color: brown;
+
+  }
   
   /* Estilo para o link de esqueceu a senha */
   .form-group .forgot-password {
