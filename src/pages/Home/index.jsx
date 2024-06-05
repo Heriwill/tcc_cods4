@@ -19,7 +19,7 @@ function Home(){
           <p className='texto1'>ascaaaaaaaaaaaaaaaaaa ascccccccccccccccccccccccc sacccccccccccccccccCuidado, o texto passa do espaço sjsjs sjsjs sjsjs jsjsjssssssssssssssssssssssssssssssssssss</p>
            </h1>
 
-           <h2 >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ratione soluta, nobis alias sint modi, ipsam accusamus fugit sit ex consequatur. Doloremque voluptatem omnis, eum quasi facilis porro quisquam totam?</h2>
+           <h2 id='subtitulo'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ratione soluta, nobis alias sint modi, ipsam accusamus fugit sit ex consequatur. Doloremque voluptatem omnis, eum quasi facilis porro quisquam totam?</h2>
 
             <p></p>
             <br /><br />
@@ -84,7 +84,7 @@ function Home(){
         <div>
         <CardGroup>
       <Card>
-        <Card.Img className='Card.Img' variant="top" src="../images/imgcarde1.jpeg" />
+        <Card.Img className='imgcardegrupo' variant="top" src="../images/imgcarde1.jpeg" />
         <Card.Body className='cardecorpo'>
           <Card.Title className='cardetitulo'>
           <a href="http://" className='link'>XXXXXXXXXXXXXXX</a>  
@@ -100,7 +100,7 @@ function Home(){
       </Card>
 
       <Card>
-        <Card.Img variant="top" src="../images/imgcarde2.jpeg" heref=""/>
+        <Card.Img className='imgcardegrupo' variant="top" src="../images/imgcarde2.jpeg" heref=""/>
         <Card.Body className='cardecorpo'>
           <Card.Title className='cardetitulo'>
           <a href="../Usuario" className='link'>cadastre-se</a>  
@@ -116,7 +116,7 @@ function Home(){
       </Card>
 
       <Card>
-        <Card.Img variant="top" src="../images/imgcarde1.jpeg" />
+        <Card.Img className='imgcardegrupo' variant="top" src="../images/imgcarde1.jpeg" />
         <Card.Body className='cardecorpo'>
           <Card.Title className='cardetitulo'>
           <a href="http://" className='link'>Acesse o App</a>
@@ -133,8 +133,8 @@ function Home(){
       </Card>
     </CardGroup>
           </div>
-    
-
+      <p></p>
+      <br />
       <footer>
         <p>Footer</p>
         <p>Informacoes finais</p>

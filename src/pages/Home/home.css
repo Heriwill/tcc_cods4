@@ -22,10 +22,24 @@
     font-size: 28px;
     font-display: block;
     text-align: center;
+    --box-sizing: border-box;
+    
+    
+    
+}
+
+#subtitulo{
     box-sizing: border-box;
-    
-    
-    
+    background-color: aqua;
+    text-align: center;
+    margin-top: 5%;
+    color: #070606;
+    border-radius: 10px;
+    border-style: ridge;
+   --text-decoration:none;
+   --overflow:visible;
+
+
 }
 
 .texto1{
@@ -41,7 +55,7 @@
 */
 .cardedireita1{
     margin-left: 77%;
-    margin-top: -650px;
+    margin-top: -670px;
     width: 22%;
   
 }
@@ -85,9 +99,19 @@
 
 #link:hover{
     --visibility: visible;
-    color: aqua;
+    color: rgb(154, 204, 18);
 }
 
-Card.Img{
-    cursor: pointer;
+.imgcardegrupo{
+    --cursor: pointer;
+    border-radius: 10px;
+    border-style: outset;
+    border-color: gray;
+    height: 65%;
+}
+
+footer{
+    box-sizing: border-box;
+    color: #c72525;
+    background-color: beige;
 }
