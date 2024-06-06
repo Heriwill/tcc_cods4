@@ -27,7 +27,7 @@ function Home(){
         <p></p><br />
 
 
-        <Card border="primary" style={{ width: '18rem' }} >
+        <Card border="primary" className='cardes' >
         <Card.Header>Header</Card.Header>
         <Card.Body className='cardecorpo'>
           <Card.Title>Primary Card Title</Card.Title>
@@ -40,9 +40,8 @@ function Home(){
     
       <br />
 
-      <img src="../images/imgcarde2.jpeg" id='imgmeio'/>
 
-      <Card border="primary" className='cardedireita1' >
+      <Card border="primary" className='cardes' >
         <Card.Header>Header, mudar para esquerda da margem</Card.Header>
         <Card.Body className='cardecorpo'>
           <Card.Title>Primary Card Title</Card.Title>
@@ -55,7 +54,7 @@ function Home(){
     
     <br />
 
-    <Card border="primary" className='cardedireita2' >
+    <Card border="primary" className='cardes' >
         <Card.Header>Header</Card.Header>
         <Card.Body className='cardecorpo'>
           <Card.Title>Primary Card Title</Card.Title>
@@ -68,7 +67,7 @@ function Home(){
 
     <br />
 
-    <Card border="primary" style={{ width: '18rem' }} id='cardeesquerda2'>
+    <Card border="primary" className='cardes'>
         <Card.Header>Header</Card.Header>
         <Card.Body className='cardecorpo'>
           <Card.Title>Primary Card Title</Card.Title>
@@ -81,6 +80,10 @@ function Home(){
 
 <   br />
 
+<img src="../images/imgcarde2.jpeg" id='imgmeio'/>
+
+
+      <br />
         <div>
         <CardGroup>
       <Card>
