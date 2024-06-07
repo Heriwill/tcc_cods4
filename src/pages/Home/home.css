@@ -1,6 +1,6 @@
 #imgtopo{
-    width: 50%;
-    margin-top: 10px;
+    width: 51%;
+    margin-top: 15px;
     border-radius: 10px;
     border-style: outset;
     border-color: gray;
@@ -9,21 +9,29 @@
 /*Ou colocar a imagem de fundo na metade da tela*/
 #titulo{
     --cursor: pointer;
-    background-color: #000000;
-    padding: 15.5% 14px 10.5% ;
-    margin-left: 52%;
-    margin-right: 1.5%;
-    margin-top: -33.5%;
+    background-color: rgb(114, 73, 138);
+    border: fixed;
+    margin: fixed;
+  --border-block: 50px dashed red;
+    padding: 14% 14px 10.5% ;
+    margin-left: 51.8%;
+    margin-right: 0%;
+    margin-top: -34.1%;
     margin-bottom: 100px;
-
     text-decoration: none;
-    color: #c72525;
+    color: plum;
     border-radius: 10px;
     border-style: outset;
+    border-color: white;
     --border-spacing: 50px;
     font-size: 58px;
     font-display: block;
     text-align: center;
+    text-shadow: 
+    -1px -1px 0 black,
+    -1px -1px 0 black,
+    -1px -1px 0 black,
+    -1px -1px 0 black;
     --box-sizing: border-box;
     
     
@@ -80,6 +88,7 @@
 .cardes{
     width: 30%;
     margin-top: 5%;
+    
 
 }
 
@@ -89,8 +98,9 @@
     margin-left: 50%;
     margin-bottom: 200px;
     border-radius: 10px;
-    border-style: outset;
-    border-color: gray;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(109, 38, 109);
     
    --image-rendering: optimizeSpeed;
     
@@ -98,7 +108,7 @@
 }
 
 .cardecorpo{
-    background-color: grey;
+    background-color: rgb(114, 73, 138);
 }
 .cardetitulo{
     color: plum;
@@ -106,10 +116,16 @@
 
 .cardetexto{
     color: plum;
+    text-shadow: 
+    -1px -1px 0 black,
+    -1px -1px 0 black,
+    -1px -1px 0 black,
+    -1px -1px 0 black;
 }
 
 #link:hover{
     --visibility: visible;
+    
     color: rgb(154, 204, 18);
 }
 
