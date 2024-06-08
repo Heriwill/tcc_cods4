@@ -26,6 +26,7 @@ function Home(){
         
         <p></p><br />
 
+        <section id='blocomeio'>
 
         <Card border="primary" className='cardes' >
         <Card.Header>Header</Card.Header>
@@ -42,7 +43,7 @@ function Home(){
 
 
       <Card border="primary" className='cardes' >
-        <Card.Header>Header, mudar para esquerda da margem</Card.Header>
+        <Card.Header>Header</Card.Header>
         <Card.Body className='cardecorpo'>
           <Card.Title>Primary Card Title</Card.Title>
           <Card.Text>
@@ -82,7 +83,7 @@ function Home(){
 
 <img src="../images/imgcarde2.jpeg" id='imgmeio'/>
 
-
+</section>
       <br />
         <div>
         <CardGroup>

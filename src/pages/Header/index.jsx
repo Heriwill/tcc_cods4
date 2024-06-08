@@ -5,6 +5,7 @@ function Header(){
     
     return(
             <header>
+                <img src="../images/logo.jpeg" alt="" id='logoimg' />
                 <a href="/" className="logo">PowerFlex Academy</a>
                 <a href="/usuario" className="usuario">Cadastrar Usuário</a>
                 <a href="/listausuario" className="usuario">ListaUsuário</a>

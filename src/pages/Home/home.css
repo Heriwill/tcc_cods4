@@ -3,7 +3,7 @@
     margin-top: 15px;
     border-radius: 10px;
     border-style: outset;
-    border-color: gray;
+    border-color: white;
 }
 
 /*Ou colocar a imagem de fundo na metade da tela*/
@@ -39,7 +39,7 @@
 
 #subtitulo{
     box-sizing: border-box;
-    background-color: aqua;
+    background-color:  rgb(114, 73, 138);
     text-align: center;
     margin-top: 5%;
     color: #070606;
@@ -84,6 +84,16 @@
 
 }
 */
+#blocomeio{
+    background-color: white;
+    padding: 0.8%;
+    border-style: ridge;
+    border-radius: 20px;
+    border-color: pink;
+    
+    
+    
+}
 
 .cardes{
     width: 30%;
