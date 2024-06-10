@@ -1,5 +1,6 @@
 #imgtopo{
-    width: 51%;
+    width: 59.7%;
+    height: 460px;
     margin-top: 15px;
     border-radius: 10px;
     border-style: outset;
@@ -10,22 +11,25 @@
 #titulo{
     --cursor: pointer;
     background-color: rgb(114, 73, 138);
-    border: fixed;
-    margin: fixed;
+    --border: fixed;
+    --margin: fixed;
   --border-block: 50px dashed red;
-    padding: 14% 14px 10.5% ;
-    margin-left: 51.8%;
+    padding: 5% 10px 10% ;
+    margin-left: 60%;
     margin-right: 0%;
-    margin-top: -34.1%;
+    margin-top: -35%;
     margin-bottom: 100px;
+    height: 458px;
     text-decoration: none;
     color: plum;
     border-radius: 10px;
-    border-style: outset;
+    border-top: solid;
+    border-right: solid;
+    --border-style: outset;
     border-color: white;
     --border-spacing: 50px;
-    font-size: 58px;
-    font-display: block;
+    font-size: 56px;
+    --font-display: block;
     text-align: center;
     text-shadow: 
     -1px -1px 0 black,
@@ -42,9 +46,16 @@
     background-color:  rgb(114, 73, 138);
     text-align: center;
     margin-top: 5%;
-    color: #070606;
-    border-radius: 10px;
+    color: plum;
+    border-radius: 13px;
     border-style: ridge;
+    border-color: white;
+    border-width: 5px;
+    text-shadow: 
+    -1px -1px 0 black,
+    -1px -1px 0 black,
+    -1px -1px 0 black,
+    -1px -1px 0 black;
    --text-decoration:none;
    --overflow:visible;
 
@@ -53,6 +64,7 @@
 
 .texto1{
     font-size: 20px;
+    
 }
 /*
 
@@ -90,6 +102,7 @@
     border-style: ridge;
     border-radius: 20px;
     border-color: pink;
+    margin-top: 1%;
     
     
     
@@ -97,15 +110,18 @@
 
 .cardes{
     width: 30%;
-    margin-top: 5%;
+    margin-top: 3%;
+    margin-bottom: -1%;
+    margin-left: 2%;
+    --text-align:center;
     
 
 }
 
 #imgmeio{
     width: 50%;
-    margin-top: -750px;
-    margin-left: 50%;
+    margin-top: -610px;
+    margin-left: 48%;
     margin-bottom: 200px;
     border-radius: 10px;
     border-style: solid;
@@ -115,6 +131,10 @@
    --image-rendering: optimizeSpeed;
     
 
+}
+
+#cardegrup{
+    margin-top: 5%;
 }
 
 .cardecorpo{
@@ -133,24 +153,49 @@
     -1px -1px 0 black;
 }
 
-#link:hover{
+/*
+a:link{
+    color: purple;
+    text-decoration:sublime;
+}
+ */
+.link:link{
+    color: rgb(241, 237, 241);
+    text-decoration: none;
+}
+.link:visited{
     --visibility: visible;
+    color: plum;
+    text-decoration: none;
     
-    color: rgb(154, 204, 18);
+    
 }
 
 .imgcardegrupo{
     --cursor: pointer;
     border-radius: 10px;
-    border-style: outset;
-    border-color: gray;
+    border-style: solid;
+    border-color: white;
     height: 65%;
+    
 }
 
 footer{
     box-sizing: border-box;
+    margin-top: 5%;
     color: #c72525;
     background-color: beige;
-    border-style: groove;
+    border-style:groove;
+    border-color: black;
+    border-width: 5px;
+    
+}
+
+#logofooter{
+    width: 10%;
+    height: 20%;
+    margin-left: 3%;
+    margin-top: 3%;
+    border-style: double;
     border-color: black;
 }

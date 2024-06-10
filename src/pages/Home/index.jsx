@@ -16,10 +16,14 @@ function Home(){
            
            <h1 id='titulo'>PowerFlex Academy
           <p className='texto1'>diferenciar a o tamnho de letra do título do conteudo</p> 
-          <p className='texto1'>ascaaaaaaaaaaaaaaaaaa ascccccccccccccccccccccccc sacccccccccccccccccCuidado, o texto passa do espaço sjsjs sjsjs sjsjs jsjsjssssssssssssssssssssssssssssssssssss</p>
+          <p className='texto1'>ascaaaaaaaaaaaaaaaaaa ascccccccccccccccccccccccc sacccccccccccccccccCuidado, o texto passa do espaço sjsjs sjsjs sjsjs jsjsjssssssssssssssssssssssssssssssssssss
+          <a href="#cardegrup" className='link'>...entao conhecça nossos planos...</a>vsdsdsvdvsdvsdvvs    
+          </p>
            </h1>
 
-           <h2 id='subtitulo'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ratione soluta, nobis alias sint modi, ipsam accusamus fugit sit ex consequatur. Doloremque voluptatem omnis, eum quasi facilis porro quisquam totam?</h2>
+           <h2 id='subtitulo'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ratione soluta, nobis alias sint modi, ipsam accusamus fugit sit ex consequatur. Doloremque voluptatem omnis, eum quasi facilis porro quisquam totam?
+          <a href="../Usuario" className='link'>.ARRUMAR A VISUALIZACAO DOS LINKS..cadastre-se clicando aqui</a>  
+           </h2>
 
             <p></p>
             <br /><br />
@@ -40,7 +44,6 @@ function Home(){
       </Card>
     
       <br />
-
 
       <Card border="primary" className='cardes' >
         <Card.Header>Header</Card.Header>
@@ -85,14 +88,12 @@ function Home(){
 
 </section>
       <br />
-        <div>
+        <div id='cardegrup'>
         <CardGroup>
       <Card>
         <Card.Img className='imgcardegrupo' variant="top" src="../images/imgcarde1.jpeg" />
         <Card.Body className='cardecorpo'>
-          <Card.Title className='cardetitulo'>
-          <a href="http://" className='link'>XXXXXXXXXXXXXXX</a>  
-          </Card.Title>
+          <Card.Title className='cardetitulo'>Plano Power</Card.Title>
           <Card.Text className='cardetexto'>
             This is a wider card with supporting text below as a natural lead-in
             to additional content. This content is a little bit longer.
@@ -106,9 +107,7 @@ function Home(){
       <Card>
         <Card.Img className='imgcardegrupo' variant="top" src="../images/imgcarde2.jpeg" heref=""/>
         <Card.Body className='cardecorpo'>
-          <Card.Title className='cardetitulo'>
-          <a href="../Usuario" className='link'>cadastre-se</a>  
-          </Card.Title>
+          <Card.Title className='cardetitulo'>Plano Black</Card.Title>
           <Card.Text className='cardetexto'>
             This card has supporting text below as a natural lead-in to
             additional content.{' '}
@@ -122,9 +121,7 @@ function Home(){
       <Card>
         <Card.Img className='imgcardegrupo' variant="top" src="../images/imgcarde1.jpeg" />
         <Card.Body className='cardecorpo'>
-          <Card.Title className='cardetitulo'>
-          <a href="http://" className='link'>Acesse o App</a>
-          </Card.Title>
+          <Card.Title className='cardetitulo'>Plano Flex</Card.Title>
           <Card.Text className='cardetexto'>
             This is a wider card with supporting text below as a natural lead-in
             to additional content. This card has even longer content than the
@@ -140,7 +137,7 @@ function Home(){
       <p></p>
       <br />
       <footer>
-        <p>Footer</p>
+        <img src="../images/logo.jpeg" alt="" id='logofooter'/>
         <p>Informacoes finais</p>
       </footer>
      
