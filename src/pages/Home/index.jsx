@@ -100,7 +100,7 @@ function Home(){
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
+          <small className="text-muted">Last upadate 3 min</small>
         </Card.Footer>
       </Card>
 
@@ -114,7 +114,7 @@ function Home(){
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">PowerFlex Academy</small>
+          <small className="text-muted">PowerFlex Academy (esse fica)</small>
         </Card.Footer>
       </Card>
 
@@ -129,7 +129,7 @@ function Home(){
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
+          <small className="text-muted">Deixar nessa altura, mas com fundo em branco</small>
         </Card.Footer>
       </Card>
     </CardGroup>
@@ -143,15 +143,15 @@ function Home(){
         </div>
         <div class="columns">
             <div class="column">
-                <h3>Tópico 1</h3>
+                <h3>Redes Sociais</h3>
                 <p>Descrição do tópico 1.</p>
             </div>
             <div class="column">
-                <h3>Tópico 2</h3>
+                <h3>Desenvolvdores</h3>
                 <p>Descrição do tópico 2.</p>
             </div>
             <div class="column">
-                <h3>Tópico 3</h3>
+                <h3>Cadastre-se</h3>
                 <p>Descrição do tópico 3.</p>
             </div>
         </div>

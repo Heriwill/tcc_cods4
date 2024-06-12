@@ -184,6 +184,7 @@ a:link{
     height: 65%;
     
 }
+
 /*
 footer{
     box-sizing: border-box;
@@ -213,8 +214,11 @@ footer{
 footer {
     background-color: black;
     margin-top: 5%;
+    border-style: solid;
+    border-color: rgb(114, 73, 138);
     padding: 20px 0;
     text-align: center;
+    --clear:both;
   }
   
   .container {
