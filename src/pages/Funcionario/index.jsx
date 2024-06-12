@@ -11,6 +11,7 @@ const Funcionario = () => {
     };
 
   return (
+    
     <div className="app-container">
       <div className="form-group">
         <label>Nome</label>
@@ -28,6 +29,7 @@ const Funcionario = () => {
       </div>
 
     </div>
+    
   )
 
 }

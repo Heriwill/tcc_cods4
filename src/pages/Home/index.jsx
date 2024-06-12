@@ -84,7 +84,7 @@ function Home(){
 
 <   br />
 
-<img src="../images/imgcarde2.jpeg" id='imgmeio'/>
+<img src="../images/imgcardemeio.jpeg" id='imgmeio'/>
 
 </section>
       <br />
@@ -119,7 +119,7 @@ function Home(){
       </Card>
 
       <Card>
-        <Card.Img className='imgcardegrupo' variant="top" src="../images/imgcarde1.jpeg" />
+        <Card.Img className='imgcardegrupo' variant="top" src="../images/imgcarde3.jpeg" />
         <Card.Body className='cardecorpo'>
           <Card.Title className='cardetitulo'>Plano Flex</Card.Title>
           <Card.Text className='cardetexto'>
@@ -137,9 +137,26 @@ function Home(){
       <p></p>
       <br />
       <footer>
-        <img src="../images/logo.jpeg" alt="" id='logofooter'/>
-        <p>Informacoes finais</p>
-      </footer>
+    <div class="container">
+        <div class="footerlogo">
+            <img src="../images/logo.jpeg" alt=""/>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <h3>Tópico 1</h3>
+                <p>Descrição do tópico 1.</p>
+            </div>
+            <div class="column">
+                <h3>Tópico 2</h3>
+                <p>Descrição do tópico 2.</p>
+            </div>
+            <div class="column">
+                <h3>Tópico 3</h3>
+                <p>Descrição do tópico 3.</p>
+            </div>
+        </div>
+    </div>
+</footer>
      
 
     </>   

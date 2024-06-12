@@ -1,6 +1,6 @@
 #imgtopo{
     width: 59.7%;
-    height: 460px;
+    height: 500px;
     margin-top: 15px;
     border-radius: 10px;
     border-style: outset;
@@ -13,13 +13,14 @@
     background-color: rgb(114, 73, 138);
     --border: fixed;
     --margin: fixed;
+    display: block;
   --border-block: 50px dashed red;
     padding: 5% 10px 10% ;
     margin-left: 60%;
     margin-right: 0%;
-    margin-top: -35%;
+    margin-top: -27.5%;
     margin-bottom: 100px;
-    height: 458px;
+    height: 500px;
     text-decoration: none;
     color: plum;
     border-radius: 10px;
@@ -160,15 +161,19 @@ a:link{
 }
  */
 .link:link{
-    color: rgb(241, 237, 241);
+    color: purple;
     text-decoration: none;
+    
 }
 .link:visited{
     --visibility: visible;
     color: plum;
     text-decoration: none;
     
-    
+}
+.link:hover{
+    color: blueviolet;
+    text-decoration:none;
 }
 
 .imgcardegrupo{
@@ -179,7 +184,7 @@ a:link{
     height: 65%;
     
 }
-
+/*
 footer{
     box-sizing: border-box;
     margin-top: 5%;
@@ -199,3 +204,53 @@ footer{
     border-style: double;
     border-color: black;
 }
+
+#textofooter{
+    margin-left: 20%;
+    margin-bottom: 1%;
+}*/
+
+footer {
+    background-color: black;
+    margin-top: 5%;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footerlogo img {
+    max-width: 100px;
+    border-style: double;
+    border-color: blueviolet;
+  }
+  
+  .columns {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: blueviolet;
+  }
+  
+  .column p {
+    font-size: 14px;
+    color: plum;
+  }
+  
