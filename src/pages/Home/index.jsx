@@ -100,7 +100,7 @@ function Home(){
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last upadate 3 min</small>
+          <small className="text-muted">POWERFLEX ACADEMY</small>
         </Card.Footer>
       </Card>
 
@@ -114,7 +114,7 @@ function Home(){
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">PowerFlex Academy (esse fica)</small>
+          <small className="text-muted">PRECO DOS PLANOS EXEMPLO</small>
         </Card.Footer>
       </Card>
 

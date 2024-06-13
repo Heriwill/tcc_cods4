@@ -2,7 +2,8 @@ header{
     display: flex;
     align-items: center;
     justify-content:space-around;
-    width: 100%;
+    width: 102.4%;
+    margin-left: -1.2%;
     height: 75px;
     background-color: black;
     

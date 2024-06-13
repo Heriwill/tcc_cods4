@@ -1,10 +1,10 @@
 #imgtopo{
-    width: 59.7%;
+    margin-left: -1.2%;
     height: 500px;
     margin-top: 15px;
-    border-radius: 10px;
-    border-style: outset;
-    border-color: white;
+    --border-radius: 10px;
+    --border-style: outset;
+    --border-color: white;
 }
 
 /*Ou colocar a imagem de fundo na metade da tela*/
@@ -17,15 +17,15 @@
   --border-block: 50px dashed red;
     padding: 5% 10px 10% ;
     margin-left: 60%;
-    margin-right: 0%;
-    margin-top: -27.5%;
+    margin-right: -1.2%;
+    margin-top: -30.2%;
     margin-bottom: 100px;
     height: 500px;
     text-decoration: none;
     color: plum;
-    border-radius: 10px;
-    border-top: solid;
-    border-right: solid;
+    --border-radius: 10px;
+    --border-top: solid;
+    --border-right: solid;
     --border-style: outset;
     border-color: white;
     --border-spacing: 50px;
@@ -47,11 +47,13 @@
     background-color:  rgb(114, 73, 138);
     text-align: center;
     margin-top: 5%;
+     width: 102.4%;
+    margin-left: -1.2%;
     color: plum;
-    border-radius: 13px;
-    border-style: ridge;
-    border-color: white;
-    border-width: 5px;
+    --border-radius: 13px;
+    --border-style: ridge;
+    --border-color: white;
+    --border-width: 5px;
     text-shadow: 
     -1px -1px 0 black,
     -1px -1px 0 black,
@@ -100,9 +102,12 @@
 #blocomeio{
     background-color: white;
     padding: 0.8%;
-    border-style: ridge;
-    border-radius: 20px;
-    border-color: pink;
+    --border-style:solid;
+    --border-radius: 20px;
+    --border-color: azure;
+    --border-width: 14px;
+    width: 102.4%;
+    margin-left: -1.2%;
     margin-top: 1%;
     
     
@@ -124,10 +129,10 @@
     margin-top: -610px;
     margin-left: 48%;
     margin-bottom: 200px;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(109, 38, 109);
+    --border-radius: 10px;
+    --border-style: solid;
+    --border-width: 5px;
+    --border-color: rgb(109, 38, 109);
     
    --image-rendering: optimizeSpeed;
     
@@ -135,6 +140,8 @@
 }
 
 #cardegrup{
+    width: 102.4%;
+    margin-left: -1.2%;
     margin-top: 5%;
 }
 
@@ -178,9 +185,9 @@ a:link{
 
 .imgcardegrupo{
     --cursor: pointer;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: white;
+    --border-radius: 10px;
+    --border-style: solid;
+    --border-color: white;
     height: 65%;
     
 }
@@ -214,8 +221,10 @@ footer{
 footer {
     background-color: black;
     margin-top: 5%;
-    border-style: solid;
-    border-color: rgb(114, 73, 138);
+    width: 102.4%;
+    margin-left: -1.2%;
+    --border-style: solid;
+    --border-color: rgb(114, 73, 138);
     padding: 20px 0;
     text-align: center;
     --clear:both;
@@ -231,8 +240,8 @@ footer {
   
   .footerlogo img {
     max-width: 100px;
-    border-style: double;
-    border-color: blueviolet;
+    --border-style: double;
+    --border-color: blueviolet;
   }
   
   .columns {
