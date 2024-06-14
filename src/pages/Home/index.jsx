@@ -14,16 +14,14 @@ function Home(){
            <img src="../images/imgfundo.jpeg" id='imgtopo'/>
 
            
-           <h1 id='titulo'>PowerFlex Academy
-          <p className='texto1'>diferenciar a o tamnho de letra do título do conteudo</p> 
-          <p className='texto1'>ascaaaaaaaaaaaaaaaaaa ascccccccccccccccccccccccc sacccccccccccccccccCuidado, o texto passa do espaço sjsjs sjsjs sjsjs jsjsjssssssssssssssssssssssssssssssssssss
-          <a href="#cardegrup" className='link'>...entao conhecça nossos planos...</a>vsdsdsvdvsdvsdvvs    
+           <h1 id='titulo'>PowerFlex Academy 
+           <p></p>
+          <p className='texto1'>Na PowerFlex Academy nossa missão é ajudar você a alcançar seus objetivos de fitness com um programa personalizado que se adapta ao seu estilo de vida e preferências pessoais. Com uma equipe de instrutores altamente qualificados e uma comunidade de apoio, oferecemos uma experiência de treinamento que não apenas molda o corpo, mas também fortalece a mente e o espírito.
+          <p><a href="#cardegrup" className='link'>Tá esperando o que? Conheça nossos planos!</a></p>
           </p>
            </h1>
 
-           <h2 id='subtitulo'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ratione soluta, nobis alias sint modi, ipsam accusamus fugit sit ex consequatur. Doloremque voluptatem omnis, eum quasi facilis porro quisquam totam?
-          <a href="../Usuario" className='link'>.ARRUMAR A VISUALIZACAO DOS LINKS..cadastre-se clicando aqui</a>  
-           </h2>
+           <h2 id='subtitulo'>Não sabe por onde começar?<a href="../Usuario" className='link'> Clique aqui!</a> Faça seu cadastro e aproveite para defrutar de todos os benefícios que a PowerFlex tem preparado para você! </h2>
 
             <p></p>
             <br /><br />
@@ -33,12 +31,11 @@ function Home(){
         <section id='blocomeio'>
 
         <Card border="primary" className='cardes' >
-        <Card.Header>Header</Card.Header>
+        <Card.Header>Porque escolher a PowerFlex?</Card.Header>
         <Card.Body className='cardecorpo'>
-          <Card.Title>Primary Card Title</Card.Title>
+          <Card.Title>Simples!</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            Estamos dispostos a fazer o seu progresso se tornar realidade! 
           </Card.Text>
         </Card.Body>
       </Card>
@@ -46,12 +43,12 @@ function Home(){
       <br />
 
       <Card border="primary" className='cardes' >
-        <Card.Header>Header</Card.Header>
+        <Card.Header>Como vou ter progresso?</Card.Header>
         <Card.Body className='cardecorpo'>
-          <Card.Title>Primary Card Title</Card.Title>
+          <Card.Title>Muito simples!</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            Graças ao nosso sistema simples e fácil de usar, te daremos todo suporte e funções essencias
+            que farão você decolar! 
           </Card.Text>
         </Card.Body>
       </Card>
@@ -59,12 +56,15 @@ function Home(){
     <br />
 
     <Card border="primary" className='cardes' >
-        <Card.Header>Header</Card.Header>
+        <Card.Header>Quais os planos?</Card.Header>
         <Card.Body className='cardecorpo'>
-          <Card.Title>Primary Card Title</Card.Title>
+          <Card.Title>Contamos com 3 planos:</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            <ul>
+              <li>Plano Power</li>
+              <li>Plano Flex (arrumar isso)</li>
+              <li>Plano Black</li>
+            </ul>
           </Card.Text>
         </Card.Body>
       </Card>

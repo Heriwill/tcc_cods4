@@ -29,7 +29,7 @@
     --border-style: outset;
     border-color: white;
     --border-spacing: 50px;
-    font-size: 56px;
+    font-size: 60px;
     --font-display: block;
     text-align: center;
     text-shadow: 
@@ -61,12 +61,13 @@
     -1px -1px 0 black;
    --text-decoration:none;
    --overflow:visible;
+   font-size: 36px;
 
 
 }
 
 .texto1{
-    font-size: 20px;
+    font-size: 23px;
     
 }
 /*
@@ -223,6 +224,7 @@ footer {
     margin-top: 5%;
     width: 102.4%;
     margin-left: -1.2%;
+    margin-bottom: -1.5%;
     --border-style: solid;
     --border-color: rgb(114, 73, 138);
     padding: 20px 0;
