@@ -1,7 +1,11 @@
 #imgtopo{
     margin-left: -1.2%;
-    height: 500px;
-    margin-top: 15px;
+    height: 60%;
+    width: 50%;
+    margin-top: 2%;
+    --margin-left: -1.2%;
+    --height: 500px;
+    --margin-top: 15px;
     --border-radius: 10px;
     --border-style: outset;
     --border-color: white;
@@ -15,12 +19,16 @@
     --margin: fixed;
     display: block;
   --border-block: 50px dashed red;
-    padding: 5% 10px 10% ;
+    --padding: 5% 10px 10% ;
+    padding: 5% 1% 10% ;
+
     margin-left: 60%;
     margin-right: -1.2%;
     margin-top: -30.2%;
-    margin-bottom: 100px;
-    height: 500px;
+    margin-bottom: 10%;
+    --margin-bottom: 100px;
+    height: 50%;
+    --heght:500px
     text-decoration: none;
     color: plum;
     --border-radius: 10px;
@@ -127,9 +135,11 @@
 
 #imgmeio{
     width: 50%;
-    margin-top: -610px;
+    margin-top: -65%;
+    --margin-top: -610px;
     margin-left: 48%;
-    margin-bottom: 200px;
+    margin-bottom: 2%;
+    --margin-bottom: 200px;
     --border-radius: 10px;
     --border-style: solid;
     --border-width: 5px;
@@ -227,13 +237,15 @@ footer {
     margin-bottom: -1.5%;
     --border-style: solid;
     --border-color: rgb(114, 73, 138);
-    padding: 20px 0;
+    padding: 2% 0;
+   --padding: 20px 0;
     text-align: center;
     --clear:both;
   }
   
   .container {
-    max-width: 1200px;
+    max-width: 50%;
+    --max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -241,7 +253,8 @@ footer {
   }
   
   .footerlogo img {
-    max-width: 100px;
+    max-width: 10%;
+    --max-width: 100px;
     --border-style: double;
     --border-color: blueviolet;
   }
@@ -249,18 +262,20 @@ footer {
   .columns {
     display: flex;
     justify-content: space-between;
-    
-    margin-top: 20px;
+    margin-top: 2%;
+    --margin-top: 20px;
   }
   
   .column {
     flex: 1;
     margin: 0 10px;
+    --margin: 0 1%;
   }
   
   .column h3 {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 10%;
+    --margin-bottom: 10px;
     color: blueviolet;
   }
   
