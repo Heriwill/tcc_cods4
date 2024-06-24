@@ -41,9 +41,22 @@ function Home(){
       </Card>
     
       <br />
-
+   <Card border="primary" className='cardes' >
+        <Card.Header>Quais os planos?</Card.Header>
+        <Card.Body className='cardecorpo'>
+          <Card.Title>Contamos com 3 planos:</Card.Title>
+          <Card.Text>
+            <ul>
+              <li className='planoslista'>Plano Power</li>
+              <li className='planoslista'>Plano Flex</li>
+              <li className='planoslista'>Plano Titanium</li>
+            </ul>
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <br />
       <Card border="primary" className='cardes' >
-        <Card.Header>Como vou ter progresso?</Card.Header>
+        <Card.Header>Como terei progresso?</Card.Header>
         <Card.Body className='cardecorpo'>
           <Card.Title>Muito simples!</Card.Title>
           <Card.Text>
@@ -52,25 +65,9 @@ function Home(){
           </Card.Text>
         </Card.Body>
       </Card>
-    
-    <br />
-
-    <Card border="primary" className='cardes' >
-        <Card.Header>Quais os planos?</Card.Header>
-        <Card.Body className='cardecorpo'>
-          <Card.Title>Contamos com 3 planos:</Card.Title>
-          <Card.Text>
-            <ul>
-              <li>Plano Power</li>
-              <li>Plano Flex (arrumar isso)</li>
-              <li>Plano Black</li>
-            </ul>
-          </Card.Text>
-        </Card.Body>
-      </Card>
 
     <br />
-
+    {/* 
     <Card border="primary" className='cardes'>
         <Card.Header>Header</Card.Header>
         <Card.Body className='cardecorpo'>
@@ -81,7 +78,7 @@ function Home(){
           </Card.Text>
         </Card.Body>
       </Card>
-
+        */}
 <   br />
 
 <img src="../images/imgcardemeio.jpeg" id='imgmeio'/>
@@ -100,21 +97,21 @@ function Home(){
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">POWERFLEX ACADEMY</small>
+          <small className="text-muted">R$ 199,90</small>
         </Card.Footer>
       </Card>
 
       <Card>
         <Card.Img className='imgcardegrupo' variant="top" src="../images/imgcarde2.jpeg" heref=""/>
         <Card.Body className='cardecorpo'>
-          <Card.Title className='cardetitulo'>Plano Black</Card.Title>
+          <Card.Title className='cardetitulo'>Plano Titanium</Card.Title>
           <Card.Text className='cardetexto'>
             This card has supporting text below as a natural lead-in to
             additional content.{' '}
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">PRECO DOS PLANOS EXEMPLO</small>
+          <small className="text-muted">R$ 299,90</small>
         </Card.Footer>
       </Card>
 
@@ -129,7 +126,7 @@ function Home(){
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Deixar nessa altura, mas com fundo em branco</small>
+          <small className="text-muted">R$ 99,90</small>
         </Card.Footer>
       </Card>
     </CardGroup>
@@ -144,15 +141,18 @@ function Home(){
         <div class="columns">
             <div class="column">
                 <h3>Redes Sociais</h3>
-                <p>Descrição do tópico 1.</p>
+                <a href="https://www.instagram.com"><p>Instagram</p></a>
+               <a href="git"><p>GitHub</p></a>
             </div>
             <div class="column">
                 <h3>Desenvolvdores</h3>
-                <p>Descrição do tópico 2.</p>
+                <p>Front-end: Herisson, Giulia</p>
+                <p>Back-end: Juliana, Marco, Patrícia, Vinícius</p>
+                
             </div>
             <div class="column">
-                <h3>Cadastre-se</h3>
-                <p>Descrição do tópico 3.</p>
+                <h3>Contato</h3>
+                <p>(11) 98765-4321</p>
             </div>
         </div>
     </div>

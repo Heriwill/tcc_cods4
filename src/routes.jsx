@@ -3,7 +3,7 @@ import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './pages/Header';
 import Home from './pages/Home';
 import Usuario from './pages/Usuario';
-import Funcionario from './pages/Funcionario';
+import Login from './pages/Login';
 import ListaUsuario from './pages/ListaUsuario'
 
 function RoutesApp(){
@@ -14,7 +14,7 @@ function RoutesApp(){
                 <Route path="/" element={<Home/>}/>
                 <Route path="/usuario" element={<Usuario/>}/>
                 <Route path="/listausuario" element={<ListaUsuario/>}/>
-                <Route path="/funcionario" element={<Funcionario/>}/>
+                <Route path="/login" element={<Login/>}/>
                 
             </Routes>
         
