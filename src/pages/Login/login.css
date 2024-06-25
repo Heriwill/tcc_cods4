@@ -52,3 +52,7 @@
   text-align: right; /* Alinha o texto à direita */
 }
 
+.icon{
+  position: absolute;
+  margin-top: 1%;
+}

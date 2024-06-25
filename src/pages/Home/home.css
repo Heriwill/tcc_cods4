@@ -307,7 +307,7 @@ footer {
   }
   
   .container {
-    max-width: 50%;
+    max-width: 51%;
     --max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -324,7 +324,7 @@ footer {
   
   .columns {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between 1%;
     
     margin-top: 2%;
     --margin-top: 20px;

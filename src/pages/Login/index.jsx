@@ -1,38 +1,54 @@
 // npm install react-hook-form
 import  {useForm} from "react-hook-form";
 import { Link } from 'react-router-dom';
+import { FaUser, FaLock } from "react-icons/fa";
 import './login.css';
 
 const Login = () => {
     const {register, handleSubmit} = useForm();
 
     const onSubmit = (data) => {
-        alert(JSON.stringify(data))  
+        // Impede que a página seja recarregada
+        //data.preventDefault();
+        alert(JSON.stringify(data)) 
+       
+        //if (data.value.trim() === '') {
+          //alert('Campo não preenchido!');
+         // data.preventDefault(); // impede o formulário de ser submetido
+        //}
+    
+      // Faz o console log das credenciais do usuário
+      console.log("Dados de Login:", { data });
     };
 
   return (
     
     <div className="app-container">
-      <div className="form-group">
-        <label>Nome</label>
-        <input type="text" placeholder="Seu Nome"  {...register ("nome")} /> 
-      </div>
-
-      <div className="form-group">
+        <div className="form-group">
         <label>E-mail</label>
-        <input type="email" placeholder="Seu Email"  {...register ("email")} /> 
+        <input type="email" placeholder="Seu Email" maxLength={40} {...register ("email")} /> 
+        <FaUser className="icon" />
+      </div>
+      
+      <div className="form-group">
+        <label>Senha</label>
+        <input type="password" placeholder="Sua Senha" maxLength={10} {...register ("senha")} /> 
+        <FaLock className="icon" />
       </div>
 
         <div className="form-group">
-            
             <button onClick={() =>handleSubmit(onSubmit)()}>Entrar</button>
+            <p>
+            Não tem uma conta? <a href="../usuario">Registar</a>{" "}
+          </p>
+          
       </div>
 
     </div>
     
   )
-
 }
+
 
 export default Login;
 /*

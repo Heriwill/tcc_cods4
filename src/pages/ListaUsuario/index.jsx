@@ -43,4 +43,49 @@ return(
 
 export default DataLista;
 
+{ /*
+
+    import React, { useState } from 'react';
+
+function Login() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState(null);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (username.trim() === '' || password.trim() === '') {
+      setError('Preencha todos os campos');
+    } else if (username!== 'admin' || password!== 'password') {
+      setError('Usuário ou senha inválidos');
+    } else {
+      // Autenticação bem-sucedida, redirecionar para a página principal
+      console.log('Login successful!');
+      // window.location.href = '/';
+    }
+  };
+
+  return (
+    <div>
+      <h1>Login</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Usuário:
+          <input type="text" value={username} onChange={(event) => setUsername(event.target.value)} />
+        </label>
+        <br />
+        <label>
+          Senha:
+          <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} />
+        </label>
+        <br />
+        {error && <div style={{ color: 'ed' }}>{error}</div>}
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  );
+}
+
+export default Login;
+*/}
 
