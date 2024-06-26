@@ -92,8 +92,8 @@ function Home(){
         <Card.Body className='cardecorpo'>
           <Card.Title className='cardetitulo'>Plano Power</Card.Title>
           <Card.Text className='cardetexto'>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            Se você quer plano intermediário com suporte de professores, mestres e especialistas no seu desenvolvimento,
+            além de um App com exercícios e orientações essenciais para seu progresso e muito mais, o Plano Power é a sua cara! {' '}
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -106,8 +106,9 @@ function Home(){
         <Card.Body className='cardecorpo'>
           <Card.Title className='cardetitulo'>Plano Titanium</Card.Title>
           <Card.Text className='cardetexto'>
-            This card has supporting text below as a natural lead-in to
-            additional content.{' '}
+          Plano completo e para família? Com o Plano Titanium vocês contam com o suporte de professores,
+          e especialistas; O App da PowerFlex com exercícios e orientações essenciais,
+          além de poderem compartilhar todos os benefícios entre os familiares! {' '}
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -120,9 +121,8 @@ function Home(){
         <Card.Body className='cardecorpo'>
           <Card.Title className='cardetitulo'>Plano Flex</Card.Title>
           <Card.Text className='cardetexto'>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
+            Deseja um plano mais básico? O Plano Flex é ideal pois conta com benefícios como: Preço mais acessível em relação à concorrência; 
+            App com exercícios e orientações necessárias para sua evolução! {' '}
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -160,7 +160,7 @@ function Home(){
      
 
     </>   
-    )
+    )    
 
 
 

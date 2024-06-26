@@ -39,7 +39,7 @@ const Login = () => {
         <div className="form-group">
             <button onClick={() =>handleSubmit(onSubmit)()}>Entrar</button>
             <p>
-            Não tem uma conta? <a href="../usuario">Registar</a>{" "}
+            Não tem uma conta? <a href="../usuario">Cadastre-se</a>{" "}
           </p>
           
       </div>
