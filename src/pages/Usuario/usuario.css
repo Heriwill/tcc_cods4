@@ -1,5 +1,3 @@
-
-/*COLAR CSS DA GIU tbm para complementar o index.jsx da pasta Usuario*/
 .app-container {
     max-width: 600px; /* Largura máxima do contêiner */
     margin: 0 auto; /* Centraliza o contêiner na página */
@@ -31,7 +29,7 @@
   .form-group button {
     width: 100%; /* Largura total do botão */
     padding: 10px; /* Espaçamento interno do botão */
-    background-color: #007bff; /* Cor de fundo azul */
+    background-color: #ccc; /* Cor de fundo azul */
     color: #fff; /* Cor do texto branco */
     border: none; /* Sem borda */
     border-radius: 4px; /* Borda arredondada */
@@ -40,7 +38,7 @@
 
   .form-group button:hover {
     
-    color: brown;
+    color: black;
 
   }
   
@@ -58,4 +56,22 @@
 /* Estilo para o link de esqueceu a senha */
 #app-container .forgot-password {
   text-align: right; /* Alinha o texto à direita */
+}
+
+.senha-container {
+  position: relative;
+}
+
+.toggle-senha {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.botao {
+  background-color: black;
 }
