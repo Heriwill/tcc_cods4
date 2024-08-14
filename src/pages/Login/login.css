@@ -1,6 +1,8 @@
 .app-container {
     max-width: 600px; /* Largura máxima do contêiner */
-    margin: 0 auto; /* Centraliza o contêiner na página */
+    margin-top: 10%;
+    --position: fixed;
+    --margin: 1 auto; /* Centraliza o contêiner na página */
     padding: 20px; /* Espaçamento interno do contêiner */
     
   }

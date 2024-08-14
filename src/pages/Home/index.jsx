@@ -47,9 +47,9 @@ function Home(){
           <Card.Title>Contamos com 3 planos:</Card.Title>
           <Card.Text>
             <ul>
-              <li className='planoslista'>Plano Power</li>
-              <li className='planoslista'>Plano Flex</li>
-              <li className='planoslista'>Plano Titanium</li>
+              <ol className='planoslista' >Plano Power</ol>
+              <ol className='planoslista' >Plano Flex</ol>
+              <ol className='planoslista' >Plano Titanium</ol>
             </ul>
           </Card.Text>
         </Card.Body>

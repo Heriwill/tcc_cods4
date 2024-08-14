@@ -30,7 +30,7 @@
     height: 50%;
     --heght:500px
     text-decoration: none;
-     color: rgb(179, 60, 149);
+    --color: rgb(179, 60, 149);
     --border-radius: 10px;
     --border-top: solid;
     --border-right: solid;
@@ -93,10 +93,10 @@
     --box-sizing: border-box;
     --background-color:  rgb(114, 73, 138);
     text-align: center;
-    margin-top: 5%;
+    margin-top: 20%;
     width: 102.4%;
     margin-left: -1.2%;
-    color: rgb(179, 60, 149);
+    --color: rgb(179, 60, 149);
     --border-radius: 13px;
     --border-style: ridge;
     --border-color: white;
@@ -173,7 +173,8 @@
 }
 */
 #blocomeio{
-    background-color: white;
+    background-color: rgb(72, 27, 100);
+    --background-color: rgb(109, 38, 109);
     padding: 0.8%;
     --border-style:solid;
     --border-radius: 20px;
@@ -187,6 +188,10 @@
     
 }
 
+.planoslista{
+    color: white;
+    
+}
 .cardes{
     width: 30%;
     margin-top: 3%;
@@ -198,7 +203,7 @@
 
 #imgmeio{
     width: 50%;
-    margin-top: -60%;
+    margin-top: -38%;
     --margin-top: -610px;
     margin-left: 48%;
     margin-bottom: 2%;
@@ -206,7 +211,7 @@
     --border-radius: 10px;
     --border-style: solid;
     --border-width: 5px;
-    --border-color: rgb(109, 38, 109);
+    --border-color: rgb(182, 178, 181);
     
    --image-rendering: optimizeSpeed;
     
@@ -219,15 +224,21 @@
     margin-top: 5%;
 }
 
+.cardelista{
+    height: 40px;
+    width: 40%;
+}
+
 .cardecorpo{
     background-color: rgb(114, 73, 138);
 }
 .cardetitulo{
-    color: plum;
+    color: white;
 }
 
 .cardetexto{
-    color: plum;
+    --color: plum;
+    color: white;
     text-shadow: 
     -1px -1px 0 black,
     -1px -1px 0 black,
@@ -242,7 +253,7 @@ a:link{
 }
  */
 .link:link{
-    color: purple;
+    color: white;
     text-decoration: none;
     
 }
@@ -252,11 +263,12 @@ a:link{
     text-decoration: none;
     
 }
+/*
 .link:hover{
-    color: blueviolet;
+    color: white;
     text-decoration:none;
 }
-
+*/
 .imgcardegrupo{
     --cursor: pointer;
     --border-radius: 10px;
