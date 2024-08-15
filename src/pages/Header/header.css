@@ -20,6 +20,7 @@ header{
     cursor: pointer;
     font-weight:bold;
     color: blueviolet;
+    background-color: blue
 }
 .usuario{
     text-decoration: none;
