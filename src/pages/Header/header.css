@@ -8,6 +8,7 @@ header{
     height: 90px;
     background-color: whitesmoke;
     
+    
 }
 #logoimg{
     height: 75px; 
@@ -20,8 +21,8 @@ header{
     cursor: pointer;
     font-weight:bold;
     color: blueviolet;
-    background-color: blue
 }
+
 .usuario{
     text-decoration: none;
     cursor: pointer;
@@ -36,6 +37,6 @@ header{
     cursor: pointer;
     background-color: white;
     padding: 5px 20px;
-    color:black;
+    color:red;
     border-radius: 4px;
 }
