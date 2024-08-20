@@ -230,7 +230,8 @@
 }
 
 .cardecorpo{
-    background-color: rgb(114, 73, 138);
+    --background-color: rgb(114, 73, 138);
+    background-color: ;
 }
 .cardetitulo{
     color: white;

@@ -6,7 +6,8 @@ header{
     margin-left: -1.2%;
     margin-top: -1.5%;
     height: 90px;
-    background-color: whitesmoke;
+    --background-color: whitesmoke;
+    background-color: black;
     
     
 }
@@ -37,6 +38,6 @@ header{
     cursor: pointer;
     background-color: white;
     padding: 5px 20px;
-    color:red;
+    color:black;
     border-radius: 4px;
 }
