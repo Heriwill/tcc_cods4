@@ -189,7 +189,7 @@
 }
 
 .planoslista{
-    color: white;
+    color: black;
     
 }
 .cardes{
@@ -227,12 +227,19 @@
 .cardelista{
     height: 40px;
     width: 40%;
+    
+}
+
+.cardecorpomeio{
+    background-color: white;
 }
 
 .cardecorpo{
     --background-color: rgb(114, 73, 138);
-    background-color: ;
+    background-color: black;
 }
+
+
 .cardetitulo{
     color: white;
 }

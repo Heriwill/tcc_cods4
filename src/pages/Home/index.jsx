@@ -32,7 +32,7 @@ function Home(){
 
         <Card border="primary" className='cardes' >
         <Card.Header>Porque escolher a PowerFlex?</Card.Header>
-        <Card.Body className='cardecorpo'>
+        <Card.Body className='cardecorpomeio'>
           <Card.Title>Simples!</Card.Title>
           <Card.Text>
             Estamos dispostos a fazer o seu progresso se tornar realidade! 
@@ -43,7 +43,7 @@ function Home(){
       <br />
    <Card border="primary" className='cardes' >
         <Card.Header>Quais os planos?</Card.Header>
-        <Card.Body className='cardecorpo'>
+        <Card.Body  className='cardecorpomeio'>
           <Card.Title>Contamos com 3 planos:</Card.Title>
           <Card.Text>
             <ul>
@@ -57,7 +57,7 @@ function Home(){
       <br />
       <Card border="primary" className='cardes' >
         <Card.Header>Como terei progresso?</Card.Header>
-        <Card.Body className='cardecorpo'>
+        <Card.Body  className='cardecorpomeio'>
           <Card.Title>Muito simples!</Card.Title>
           <Card.Text>
             Graças ao nosso sistema simples e fácil de usar, te daremos todo suporte e funções essencias
