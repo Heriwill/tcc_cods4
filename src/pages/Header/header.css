@@ -7,7 +7,8 @@ header{
     margin-top: -1.5%;
     height: 90px;
     --background-color: whitesmoke;
-    background-color: black;
+    --background-color: #FEFADC;
+    background-color: rgb(66, 64, 64);
     
     
 }
@@ -21,7 +22,8 @@ header{
     font-size: 30px;
     cursor: pointer;
     font-weight:bold;
-    color: blueviolet;
+    color: beige;
+    --color: blueviolet;
 }
 
 .usuario{

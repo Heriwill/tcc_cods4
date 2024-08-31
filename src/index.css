@@ -5,7 +5,8 @@
 
 body{
   --color: purple;
-  background-color: #FEF6C9;
+  --background-color: #FEF6C9;
+  background-color: black;
   font-family: 'Times New Roman', Times, serif;
   overflow-x: hidden;
 }
