@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Image from 'react-bootstrap/Image';
-
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './home.css'
 
 function Home(){
@@ -39,7 +40,8 @@ function Home(){
           </Card.Text>
         </Card.Body>
       </Card>
-    
+   
+
       <br />
    <Card border="primary" className='cardes' >
         <Card.Header>Quais os planos?</Card.Header>
@@ -132,6 +134,13 @@ function Home(){
     </CardGroup>
           </div>
       <p></p>
+      <br />
+
+        
+      {/*npm install react-responsive-carousel*/}
+
+
+
       <br />
       <footer>
     <div class="container">
