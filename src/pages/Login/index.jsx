@@ -49,13 +49,7 @@ const Login = () => {
             <button onClick={() =>handleSubmit(onSubmit)()}>Entrar</button>
             <p>
             Não tem uma conta? <a href="../usuario">Cadastre-se</a>{" "}
-             </p>//if ("Ao entrar vai para nova home ") {
-              
-            //} else {
-              //alert('Erro!')
-           // }
-         
-          
+             </p>  
       </div>
 
     </div>
