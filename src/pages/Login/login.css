@@ -58,3 +58,16 @@
   position: absolute;
   margin-top: 1%;
 }
+
+#imgfundo{
+  position: relative;
+  height: 100%;
+  width: 105.4%;
+  margin-top: 0%;
+  margin-left: -4.2%;
+  --padding: 0.1%;
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1; 
+  --background-image: none;
+}

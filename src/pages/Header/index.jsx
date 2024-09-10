@@ -9,7 +9,7 @@ function Header(){
                 <a href="/" className="logo">PowerFlex Academy</a>
                 <a href="/login" className="login">Login</a>
                 <a href="/usuario" className="usuario">Cadastrar Usuário</a>
-                <a href="/listausuario" className="usuario">ListaUsuário</a>
+                <a href="/listausuario" className="usuario">Agenda de aula</a>
             </header>
 
     )
