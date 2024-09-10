@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Image from 'react-bootstrap/Image';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 import './home.css'
 
 function Home(){
@@ -31,6 +30,8 @@ function Home(){
 
         <section id='blocomeio'>
 
+       
+
         <Card border="primary" className='cardes' >
         <Card.Header>Porque escolher a PowerFlex?</Card.Header>
         <Card.Body className='cardecorpomeio'>
@@ -40,7 +41,8 @@ function Home(){
           </Card.Text>
         </Card.Body>
       </Card>
-   
+      
+     
 
       <br />
    <Card border="primary" className='cardes' >
@@ -57,6 +59,8 @@ function Home(){
         </Card.Body>
       </Card>
       <br />
+
+      
       <Card border="primary" className='cardes' >
         <Card.Header>Como terei progresso?</Card.Header>
         <Card.Body  className='cardecorpomeio'>
@@ -68,6 +72,8 @@ function Home(){
         </Card.Body>
       </Card>
 
+
+      <img id='imgmeio' src="../images/imgcardemeio.jpeg" alt="" />
     <br />
     {/* 
     <Card border="primary" className='cardes'>
@@ -83,7 +89,7 @@ function Home(){
         */}
 <   br />
 
-<img src="../images/imgcardemeio.jpeg" id='imgmeio'/>
+
 
 </section>
       <br />
