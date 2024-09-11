@@ -386,4 +386,11 @@ footer {
     font-size: 14px;
     color: plum;
   }
+
+  .icon{
+    position: absolute;
+    --margin-top: 1%;
+    margin-left: -2%;
+    
+  }
   

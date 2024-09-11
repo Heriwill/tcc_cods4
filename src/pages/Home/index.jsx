@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Image from 'react-bootstrap/Image';
-
+import { FaInstagram, FaGithub } from "react-icons/fa";
+//npm install react-icons --save      
+ 
 import './home.css'
 
 function Home(){
@@ -156,8 +158,11 @@ function Home(){
         <div class="columns">
             <div class="column">
                 <h3>Redes Sociais</h3>
+                <FaInstagram className="icon" />
                 <a href="https://www.instagram.com"><p>Instagram</p></a>
                <a href="git"><p>GitHub</p></a>
+               <FaGithub className="icon" />
+
             </div>
             <div class="column">
                 <h3>Desenvolvdores</h3>
@@ -176,7 +181,6 @@ function Home(){
 
     </>   
     )    
-
 
 
 }

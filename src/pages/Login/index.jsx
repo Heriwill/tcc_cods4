@@ -1,7 +1,7 @@
 // npm install react-hook-form
 import  {useForm} from "react-hook-form";
 import { Link } from 'react-router-dom';
-import { FaUser, FaLock } from "react-icons/fa";
+import { FaUser, FaLock, FaFacebook } from "react-icons/fa";
 import './login.css';
 
 const Login = () => {
