@@ -51,12 +51,9 @@ const Login = () => {
 
         <div className="form-group">
             <button onClick={() =>handleSubmit(onSubmit)()}>Entrar</button>
-            <p>
+            
             Não tem uma conta? <a href="../usuario">Cadastre-se</a>{" "}
-             </p>
-           
-         
-          
+
       </div>
       <img id='imgfundo' src="../images/imgfundo.jpeg" alt="" />
 

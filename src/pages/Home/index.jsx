@@ -6,6 +6,7 @@ import Image from 'react-bootstrap/Image';
 import { FaInstagram, FaGithub } from "react-icons/fa";
 //npm install react-icons --save      
  
+
 import './home.css'
 
 function Home(){
