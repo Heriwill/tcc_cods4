@@ -34,21 +34,21 @@ const Login = () => {
     
     <div className="app-container">
         <div className="form-group">
-        <label>E-mail</label>
-        <input type="email" placeholder="Seu Email" maxLength={40} {...register ("email")} /> 
+        <label>Plano</label>
+        <input type="email" placeholder="Seu Plano" maxLength={40} {...register ("plano")} /> 
         <FaUser className="icon" />
       </div>
       
       <div className="form-group">
-        <label>Senha</label>
-        <input type="password" placeholder="Sua Senha" maxLength={10} {...register ("senha")} /> 
+        <label>Preço</label>
+        <input type="password" placeholder="Seu Preço" maxLength={10} {...register ("preco")} /> 
         <FaLock className="icon" />
       </div>
 
         <div className="form-group">
             <button onClick={() =>handleSubmit(onSubmit)()}>Entrar</button>
             <p>
-            Não tem uma conta? <a href="../usuario">Cadastre-se</a>{" "}
+            Não tem uma conta? <a href="../usuario">Cadastrar Plano</a>{" "}
           </p>
           
       </div>

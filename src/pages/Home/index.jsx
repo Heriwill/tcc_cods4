@@ -12,7 +12,7 @@ function Home(){
       <>  
         
            <img src="../images/imgfundo.jpeg" id='imgtopo'/>
-
+            
            
            <h1 id='titulo'>PowerFlex Academy 
            <p></p>
