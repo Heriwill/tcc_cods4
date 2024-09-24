@@ -17,7 +17,7 @@ function Home(){
            <img src="../images/imgfundo.jpeg" id='imgtopo'/>
 
            
-           <h1 id='titulo'>PowerFlex Academy 
+           <h1 id='titulo'>PowerFlex
            <p></p>
           <p className='texto1'>Na PowerFlex Academy nossa missão é ajudar você a alcançar seus objetivos de fitness com um programa personalizado que se adapta ao seu estilo de vida e preferências pessoais. Com uma equipe de instrutores altamente qualificados e uma comunidade de apoio, oferecemos uma experiência de treinamento que não apenas molda o corpo, mas também fortalece a mente e o espírito.
           <p><a href="#cardegrup" className='link'>Tá esperando o que? Conheça nossos planos!</a></p>

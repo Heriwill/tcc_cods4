@@ -110,7 +110,7 @@
     --box-sizing: border-box;
     --background-color:  rgb(114, 73, 138);
     text-align: center;
-    margin-top: 20%;
+    margin-top: 25%;
     width: 102.4%;
     margin-left: -1.2%;
     --color: rgb(179, 60, 149);
@@ -200,7 +200,7 @@
     --border-width: 14px;
     width: 102.4%;
     margin-left: -1.2%;
-    margin-top: 1%;
+    margin-top: 6%;
     
     
     
@@ -281,7 +281,7 @@ a:link{
  */
 .link:link{
     color: white;
-    text-decoration: none;
+    text-decoration: sublime;
     
 }
 .link:visited{
@@ -289,6 +289,9 @@ a:link{
     color: plum;
     text-decoration: none;
     
+}
+.link:hover{
+    color: #00bfff;
 }
 /*
 .link:hover{

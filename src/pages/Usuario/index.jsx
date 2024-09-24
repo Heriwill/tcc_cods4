@@ -324,32 +324,10 @@ const Usuario = () => {
         <label>Nome Completo</label>
         <input type="text" placeholder="Informe o seu Nome Completo" value={vnome} onChange={handleChangeNome} />
       </div>
-
-      <div className="form-group">
-        <label>Data de Nascimento</label>
-        <input type="text" placeholder="Informe sua data de nascimento (DD/MM/AAAA)" value={vnascimento} onChange={handleChangeDataNascimento} />
-      </div>
-
-      <div className="form-group">
-        <label>Gênero</label>
-        <div>
-          <input type="radio" id="feminino" name="genero" value="Feminino" checked={vgenero === 'Feminino'} onChange={handleSelectGenero} />
-          <label htmlFor="feminino">Feminino</label>
-        </div>
-        <div>
-          <input type="radio" id="masculino" name="genero" value="Masculino" checked={vgenero === 'Masculino'} onChange={handleSelectGenero} />
-          <label htmlFor="masculino">Masculino</label>
-        </div>
-      </div>
-
+      
       <div className="form-group">
         <label>CPF</label>
         <input type="text" placeholder="Informe o seu CPF (apenas números)" value={vcpf} onChange={handleChangeCPF} />
-      </div>
-
-      <div className="form-group">
-        <label>Telefone</label>
-        <input type="text" placeholder="Informe o seu Número de Telefone (apenas números)" value={vtelefone} onChange={handleChangeTelefone} />
       </div>
 
       <div className="form-group">
@@ -373,4 +351,28 @@ const Usuario = () => {
 
 export default Usuario;
 
+
+/*
+ <div className="form-group">
+        <label>Telefone</label>
+        <input type="text" placeholder="Informe o seu Número de Telefone (apenas números)" value={vtelefone} onChange={handleChangeTelefone} />
+      </div>
+
+      <div className="form-group">
+        <label>Data de Nascimento</label>
+        <input type="text" placeholder="Informe sua data de nascimento (DD/MM/AAAA)" value={vnascimento} onChange={handleChangeDataNascimento} />
+      </div>
+
+      <div className="form-group">
+        <label>Gênero</label>
+        <div>
+          <input type="radio" id="feminino" name="genero" value="Feminino" checked={vgenero === 'Feminino'} onChange={handleSelectGenero} />
+          <label htmlFor="feminino">Feminino</label>
+        </div>
+        <div>
+          <input type="radio" id="masculino" name="genero" value="Masculino" checked={vgenero === 'Masculino'} onChange={handleSelectGenero} />
+          <label htmlFor="masculino">Masculino</label>
+        </div>
+      </div>
+*/
 
