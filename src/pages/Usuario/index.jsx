@@ -255,17 +255,19 @@ const Usuario = () => {
 
   const onSubmit = async () => {
     try {
-      if (!vnome || !vnascimento || !vcpf || !vtelefone || !vgenero || !vemail || !vsenha) {
+      {/*if (!vnome || !vnascimento || !vcpf || !vtelefone || !vgenero || !vemail || !vsenha) {*/}
+      if (!vnome || !vcpf || !vemail || !vsenha) {
         alert("Por favor, preencha todos os campos!");
         return;
       }
 
       // Verifica se os campos CPF, telefone e data de nascimento estão completos
-      if (vcpf.length !== 11 || vtelefone.length !== 11 || vnascimento.length !== 10) {
+      {/*if (vcpf.length !== 11 || vtelefone.length !== 11 || vnascimento.length !== 10) {
+        
         alert("Por favor, preencha os campos CPF, telefone e data de nascimento corretamente.");
         return;
       }
-
+    */}
       const response = await api.post('/usuarios', { nome: vnome, nascimento: vnascimento, cpf: vcpf, telefone: vtelefone, genero: vgenero, email: vemail, senha: vsenha });
       console.log(response.data);
     } catch (error) {
@@ -321,22 +323,22 @@ const Usuario = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="aapp-container">
       <div className="form-group">
-        <label>Nome Completo</label>
+        <label>Nome Completo  {vnome}</label>
         <input type="text" placeholder="Informe o seu Nome Completo" value={vnome} onChange={handleChangeNome} />
       </div>
       
       <div className="form-group">
-        <label>CPF</label>
+        <label>CPF{vcpf}</label>
         <input type="text" placeholder="Informe o seu CPF (apenas números)" value={vcpf} onChange={handleChangeCPF} />
       </div>
 
       <div className="form-group">
-        <label>E-mail</label>
+        <label>E-mail {vemail}</label>
         <input type="text" placeholder="Informe o seu E-mail" value={vemail} onChange={(e) => setEmail(e.target.value)} maxLength={40} />
       </div>
 
       <div className="form-group">
-        <label>Senha</label>
+        <label>Senha {vsenha}</label>
         <div className="senha-container">
           <input type="password" placeholder="Informe a sua Senha" value={vsenha} onChange={(e) => setSenha(e.target.value)} maxLength="20" />
         </div>

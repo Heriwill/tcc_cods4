@@ -14,14 +14,14 @@ function Home(){
     return(
       <>  
         
-           <img src="../images/imgfundo.jpeg" id='imgtopo'/>
+           <img src="../images/academia2.jpg" id='imgtopo'/>
 
            
            <h1 id='titulo'>PowerFlex
-           <p></p>
+          {/* <p></p>
           <p className='texto1'>Na PowerFlex Academy nossa missão é ajudar você a alcançar seus objetivos de fitness com um programa personalizado que se adapta ao seu estilo de vida e preferências pessoais. Com uma equipe de instrutores altamente qualificados e uma comunidade de apoio, oferecemos uma experiência de treinamento que não apenas molda o corpo, mas também fortalece a mente e o espírito.
           <p><a href="#cardegrup" className='link'>Tá esperando o que? Conheça nossos planos!</a></p>
-          </p>
+          </p>*/}
            </h1>
 
            <h2 id='subtitulo'>Não sabe por onde começar?<a href="../Usuario" className='link'> Clique aqui!</a> Faça seu cadastro e aproveite para defrutar de todos os benefícios que a PowerFlex tem preparado para você! </h2>
@@ -33,7 +33,7 @@ function Home(){
 
         <section id='blocomeio'>
 
-       
+       0
 
         <Card border="primary" className='cardes' >
         <Card.Header>Porque escolher a PowerFlex?</Card.Header>

@@ -1,13 +1,13 @@
 #imgtopo{
     --margin-left: -1.2%;
     position: relative;
-    height: 900px;
+    height: 500px;
     width: 105.4%;
     margin-top: 0%;
     margin-left: -4.2%;
     padding: 0.1%;
     background-size: cover;
-    filter: blur(5px);
+    --filter: blur(5px);
     z-index: -1;
    
     
@@ -39,7 +39,7 @@
     color: beige;
     margin-left: 30%;
     margin-right: 25%;
-    margin-top: -35.5%;
+    margin-top: -20.5%;
     margin-bottom: 10%;
     --margin-bottom: 100px;
     height: 50%;
@@ -397,3 +397,6 @@ footer {
     
   }
   
+ /*{} div{
+    border-style: dotted;
+  }}*/
