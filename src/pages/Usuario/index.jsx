@@ -268,7 +268,7 @@ const Usuario = () => {
         return;
       }
     */}
-      const response = await api.post('/usuarios', { nome: vnome, nascimento: vnascimento, cpf: vcpf, telefone: vtelefone, genero: vgenero, email: vemail, senha: vsenha });
+      const response = await api.post('/usuarios', { nome: vnome, cpf: vcpf, email: vemail, password: vsenha });
       console.log(response.data);
     } catch (error) {
       console.log(error);
