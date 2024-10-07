@@ -275,6 +275,24 @@ const Usuario = () => {
     }
   };
 
+   /*const response = await api.post('/usuarios', { 
+      nome: vnome, 
+      nascimento: vnascimento, 
+      cpf: vcpf, 
+      telefone: vtelefone, 
+      genero: vgenero, 
+      email: vemail, 
+      senha: vsenha 
+    });
+
+    console.log(response.data);
+    alert('Cadastro realizado com sucesso!'); // Mensagem de sucesso
+  } catch (error) {
+    console.error(error);
+    alert('Ocorreu um erro ao cadastrar. Tente novamente!'); // Mensagem de erro
+  }
+};*/
+
   const handleChangeCPF = (e) => {
     const onlyNums = e.target.value.replace(/\D/g, '');
     const maxChars = onlyNums.slice(0, 11);

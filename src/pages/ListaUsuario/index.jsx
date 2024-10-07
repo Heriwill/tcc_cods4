@@ -13,6 +13,7 @@ const DataLista = () =>{ //lista de dados
     const [ error, setError] = useState(null);
 
     useEffect(() => {
+      //http://localhost:8080
         api.get('Jack/obterUsuariosFieb').then(response =>{
             console.log(response)
             setData(response.data);
