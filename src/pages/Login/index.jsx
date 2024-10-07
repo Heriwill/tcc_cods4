@@ -37,22 +37,23 @@ const Login = () => {
     <div className="app-container">
         <div className="form-group">
         <label>E-mail</label>
-        <input type="email" placeholder="Seu Email" maxLength={40} {...register ("email")} /> 
+        <input type="email" placeholder="Seu Email" maxLength={40}  {...register("email", { required: true })} />   
+        {errors.email && <span>Este campo é obrigatório</span>}
         <FaUser className="icon" />
       </div>
       
       <div className="form-group">
         <label>Senha</label>
-        <input type="password" placeholder="Sua Senha" maxLength={10} {...register ("senha")} /> 
+        <input type="password" placeholder="Sua Senha" maxLength={10} {...register("senha", { required: true })}/>
+                {errors.senha && <span>Este campo é obrigatório</span>} 
         <FaLock className="icon" />
       </div>
 
         <div className="form-group">
             <button onClick={() =>handleSubmit(onSubmit)()}>Entrar</button>
-            <p>
+            
             Não tem uma conta? <a href="../usuario">Cadastre-se</a>{" "}
-          </p>
-          
+
       </div>
       <img id='imgfundo' src="../images/imgfundo.jpeg" alt="" />
 
