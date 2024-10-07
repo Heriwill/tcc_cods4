@@ -1,45 +1,40 @@
-header{
+header {
     display: flex;
     align-items: center;
-    justify-content:space-around;
-    width: 102.4%;
-    margin-left: -1.2%;
-    margin-top: -1.5%;
-    height: 90px;
-    --background-color: whitesmoke;
-    --background-color: #FEFADC;
-    --background-color: black;
-    background-color: rgb(66, 64, 64);
-    
-}
-#logoimg{
-    height: 75px; 
-    width: 5%;
-    
-}
-.logo{
-    text-decoration: none;
-    font-size: 30px;
-    cursor: pointer;
-    font-weight:bold;
-    color: beige;
-    --color: blueviolet;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(72, 27, 100); 
+    color: white;
 }
 
-.usuario{
-    text-decoration: none;
-    cursor: pointer;
-    background-color: white;
-    padding: 5px 14px;
-    color:black;
-    border-radius: 4px;
-    
+#logoimg {
+    height: 50px; /* Ajuste conforme necessário */
 }
-.login{
+
+.logo {
+    font-size: 2em; /* Aumenta o tamanho da fonte */
+    font-weight: bold;
+    color: white;
     text-decoration: none;
-    cursor: pointer;
-    background-color: white;
-    padding: 5px 20px;
-    color:black;
-    border-radius: 4px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Aumenta o espaçamento horizontal */
+    font-size: 1.2em; /* Aumenta o tamanho da fonte */
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #000; /* Amarelo gema para o hover */
+}
+
+.separator {
+    color: #000;
 }
