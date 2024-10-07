@@ -1,6 +1,8 @@
 .app-container {
     max-width: 600px; /* Largura máxima do contêiner */
-    margin: 0 auto; /* Centraliza o contêiner na página */
+    margin-top: 10%;
+    --position: fixed;
+    --margin: 1 auto; /* Centraliza o contêiner na página */
     padding: 20px; /* Espaçamento interno do contêiner */
     
   }
@@ -55,4 +57,17 @@
 .icon{
   position: absolute;
   margin-top: 1%;
+}
+
+#imgfundo{
+  position: relative;
+  height: 100%;
+  width: 105.4%;
+  margin-top: 0%;
+  margin-left: -4.2%;
+  --padding: 0.1%;
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1; 
+  --background-image: none;
 }

@@ -6,7 +6,10 @@ header{
     margin-left: -1.2%;
     margin-top: -1.5%;
     height: 90px;
-    background-color: black;
+    --background-color: whitesmoke;
+    --background-color: #FEFADC;
+    --background-color: black;
+    background-color: rgb(66, 64, 64);
     
 }
 #logoimg{
@@ -19,8 +22,10 @@ header{
     font-size: 30px;
     cursor: pointer;
     font-weight:bold;
-    color: blueviolet;
+    color: beige;
+    --color: blueviolet;
 }
+
 .usuario{
     text-decoration: none;
     cursor: pointer;

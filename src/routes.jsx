@@ -15,7 +15,6 @@ function RoutesApp(){
                 <Route path="/usuario" element={<Usuario/>}/>
                 <Route path="/listausuario" element={<ListaUsuario/>}/>
                 <Route path="/login" element={<Login/>}/>
-                
             </Routes>
         
     

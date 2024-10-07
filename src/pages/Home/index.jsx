@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Image from 'react-bootstrap/Image';
+import { FaInstagram, FaGithub } from "react-icons/fa";
+//npm install react-icons --save      
+ 
 
 import './home.css'
 
@@ -30,34 +33,40 @@ function Home(){
 
         <section id='blocomeio'>
 
+       
+
         <Card border="primary" className='cardes' >
         <Card.Header>Porque escolher a PowerFlex?</Card.Header>
-        <Card.Body className='cardecorpo'>
+        <Card.Body className='cardecorpomeio'>
           <Card.Title>Simples!</Card.Title>
           <Card.Text>
             Estamos dispostos a fazer o seu progresso se tornar realidade! 
           </Card.Text>
         </Card.Body>
       </Card>
-    
+      
+     
+
       <br />
    <Card border="primary" className='cardes' >
         <Card.Header>Quais os planos?</Card.Header>
-        <Card.Body className='cardecorpo'>
+        <Card.Body  className='cardecorpomeio'>
           <Card.Title>Contamos com 3 planos:</Card.Title>
           <Card.Text>
             <ul>
-              <li className='planoslista'>Plano Power</li>
-              <li className='planoslista'>Plano Flex</li>
-              <li className='planoslista'>Plano Titanium</li>
+              <ol className='planoslista' >Plano Power</ol>
+              <ol className='planoslista' >Plano Flex</ol>
+              <ol className='planoslista' >Plano Titanium</ol>
             </ul>
           </Card.Text>
         </Card.Body>
       </Card>
       <br />
+
+      
       <Card border="primary" className='cardes' >
         <Card.Header>Como terei progresso?</Card.Header>
-        <Card.Body className='cardecorpo'>
+        <Card.Body  className='cardecorpomeio'>
           <Card.Title>Muito simples!</Card.Title>
           <Card.Text>
             Graças ao nosso sistema simples e fácil de usar, te daremos todo suporte e funções essencias
@@ -66,6 +75,8 @@ function Home(){
         </Card.Body>
       </Card>
 
+
+      <img id='imgmeio' src="../images/imgcardemeio.jpeg" alt="" />
     <br />
     {/* 
     <Card border="primary" className='cardes'>
@@ -81,7 +92,7 @@ function Home(){
         */}
 <   br />
 
-<img src="../images/imgcardemeio.jpeg" id='imgmeio'/>
+
 
 </section>
       <br />
@@ -133,6 +144,13 @@ function Home(){
           </div>
       <p></p>
       <br />
+
+        
+      {/*npm install react-responsive-carousel*/}
+
+
+
+      <br />
       <footer>
     <div class="container">
         <div class="footerlogo">
@@ -141,8 +159,11 @@ function Home(){
         <div class="columns">
             <div class="column">
                 <h3>Redes Sociais</h3>
+                <FaInstagram className="icon" />
                 <a href="https://www.instagram.com"><p>Instagram</p></a>
                <a href="git"><p>GitHub</p></a>
+               <FaGithub className="icon" />
+
             </div>
             <div class="column">
                 <h3>Desenvolvdores</h3>
@@ -161,7 +182,6 @@ function Home(){
 
     </>   
     )    
-
 
 
 }
