@@ -268,12 +268,24 @@ const Usuario = () => {
         return;
       }
     */}
-      const response = await api.post('/usuarios', { nome: vnome, cpf: vcpf, email: vemail, password: vsenha });
-      console.log(response.data);
-    } catch (error) {
-      console.log(error);
+    const response = await api.post('/usuario', { nome: vnome, cpf: vcpf, email: vemail, password: vsenha });
+    console.log(response.data);
+    alert('Cadastro realizado com sucesso!'); // Mensagem de sucesso
+  } catch (error) {
+    // Verificando se a resposta do erro está definida
+    if (error.response) {
+      alert('Erro ao cadastrar: ' + error.response.data.message || 'Erro desconhecido');
+      console.error('Erro detalhado:', error.response.data); // Log do erro
+    } else if (error.request) {
+      alert('Erro ao cadastrar: Sem resposta do servidor.');
+      console.error('Erro de requisição:', error.request);
+    } else {
+      alert('Erro ao cadastrar: ' + error.message);
+      console.error('Erro:', error.message);
+ // Mensagem de erro
     }
-  };
+  }
+}
 
    /*const response = await api.post('/usuarios', { 
       nome: vnome, 
@@ -284,7 +296,10 @@ const Usuario = () => {
       email: vemail, 
       senha: vsenha 
     });
-
+console.log(response.data);
+    } catch (error) {
+      console.log(error);
+    }
     console.log(response.data);
     alert('Cadastro realizado com sucesso!'); // Mensagem de sucesso
   } catch (error) {

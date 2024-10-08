@@ -137,7 +137,34 @@ import api from "../../services/api";
 
 const Login = () => {
     const {register, handleSubmit, formState: { errors } } = useForm();
+    /*
+    const [vemail, setEmail] = useState([]),
+    const [vsenha, setSenha] = useState([])
 
+    //npm instal react-hook-form
+    useEffect(()=>{
+        async function loadLogin(){ //funcao de 'promessa'
+            const response = await api.get("caminho/doemail" ,{
+                params:{
+                    api_key:
+                    "781c63760a57dc4bc8050224e5238c54",
+                    language: "pt-BR",
+                    page: 1,
+                }
+            })
+            console.log(response.data.results) //resposta da 'promessa'
+            setSenha(response.data.results)
+        }
+        loadLogin()
+    },[]) 
+
+    if (!vsenha || !vsenha.isEnpty || !vemail || vemail.isEnpty){
+      cath (error) {
+        sdvsvv
+      }
+    }
+
+    */
     const onSubmit = (data) => {
         // Impede que a página seja recarregada
         //preventDefault();
@@ -198,7 +225,83 @@ const Login = () => {
 
 export default Login;
 
+/* TESTAR PARA API
 
+
+import { useForm } from "react-hook-form";
+import { Link } from 'react-router-dom';
+import { FaUser, FaLock } from "react-icons/fa";
+import './login.css';
+import api from "../../services/api";
+
+const Login = () => {
+    const { register, handleSubmit, formState: { errors } } = useForm();
+
+    const onSubmit = async (data) => {
+        try {
+            if (!data.email || !data.senha) {
+                alert("Por favor, preencha todos os campos!");
+                return;
+            }
+
+            // Fazendo a requisição à API
+            const response = await api.post('/login', {
+                email: data.email,
+                senha: data.senha,
+            });
+
+            // Verifica se o login foi bem-sucedido
+            if (response.data.success) {
+                alert("Login bem-sucedido!");
+                // Aqui você pode redirecionar o usuário ou armazenar o token
+            } else {
+                alert("Erro ao fazer login: " + response.data.message);
+            }
+        } catch (error) {
+            console.log(error);
+            alert("Ocorreu um erro ao fazer login.");
+        }
+    };
+
+    return (
+        <div className="logingeral">
+            <div className="app-container">
+                <div className="form-group">
+                    <label>E-mail</label>
+                    <input 
+                        type="email" 
+                        placeholder="Seu Email" 
+                        maxLength={40}  
+                        {...register("email", { required: true })} 
+                    />   
+                    {errors.email && <span>Este campo é obrigatório</span>}
+                    <FaUser className="icon" />
+                </div>
+                
+                <div className="form-group">
+                    <label>Senha</label>
+                    <input 
+                        type="password" 
+                        placeholder="Sua Senha" 
+                        maxLength={10} 
+                        {...register("senha", { required: true })}
+                    />
+                    {errors.senha && <span>Este campo é obrigatório</span>} 
+                    <FaLock className="icon" />
+                </div>
+
+                <div className="form-group">
+                    <button onClick={handleSubmit(onSubmit)}>Entrar</button>
+                    Não tem uma conta? <Link to="../usuario">Cadastre-se</Link>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Login;
+
+*/
 
 
 /*

@@ -12,6 +12,7 @@
     padding: 20px; /* Espaçamento interno do grupo de formulário */
     border: 1px solid #ccc; /* Borda sólida com cor cinza */
     border-radius: 8px; /* Borda arredondada */
+    color: #fff;
   }
   
   /* Estilo para os campos de entrada de texto */

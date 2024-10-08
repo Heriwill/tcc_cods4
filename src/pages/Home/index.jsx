@@ -33,7 +33,7 @@ function Home(){
 
         <section id='blocomeio'>
 
-       0
+       
 
         <Card border="primary" className='cardes' >
         <Card.Header>Porque escolher a PowerFlex?</Card.Header>
