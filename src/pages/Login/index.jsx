@@ -209,9 +209,10 @@ const Login = () => {
                 {errors.senha && <span>Este campo é obrigatório</span>} 
         <FaLock className="icon" />
       </div>
-
+      
         <div className="form-group">
             <button onClick={() =>handleSubmit(onSubmit)()}>Entrar</button>
+           
             
             Não tem uma conta? <a href="../usuario">Cadastre-se</a>{" "}
 

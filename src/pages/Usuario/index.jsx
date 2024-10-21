@@ -268,7 +268,8 @@ const Usuario = () => {
         return;
       }
     */}
-    const response = await api.post('/usuario', { nome: vnome, cpf: vcpf, email: vemail, password: vsenha });
+    //const response = await api.post('/usuario', { nome: vnome, cpf: vcpf, email: vemail, password: vsenha });
+    const response = await api.post('categoria', { nome: vnome, descricao: vemail });
     console.log(response.data);
     alert('Cadastro realizado com sucesso!'); // Mensagem de sucesso
   } catch (error) {

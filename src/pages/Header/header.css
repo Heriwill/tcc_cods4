@@ -5,6 +5,8 @@ header {
     padding: 20px;
     background-color: rgb(72, 27, 100); 
     color: white;
+    --width: 101.3%;
+    
 }
 
 #logoimg {
