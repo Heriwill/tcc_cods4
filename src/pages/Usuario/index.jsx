@@ -239,8 +239,10 @@ export default Usuario;
 import  {useForm} from "react-hook-form";
 import { Link } from 'react-router-dom';
 import './usuario.css';
-import { useState } from "react";
+//import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import api from "../../services/api";
+
 
 const Usuario = () => {
   const [vnome, setNome] = useState('');
@@ -268,8 +270,8 @@ const Usuario = () => {
         return;
       }
     */}
-    //const response = await api.post('/usuario', { nome: vnome, cpf: vcpf, email: vemail, password: vsenha });
-    const response = await api.post('categoria', { nome: vnome, descricao: vemail });
+    const response = await api.post('/usuario', { nome: vnome, cpf: vcpf, email: vemail, password: vsenha });
+    //const response = await api.post('categoria', { nome: vnome, descricao: vemail });
     console.log(response.data);
     alert('Cadastro realizado com sucesso!'); // Mensagem de sucesso
   } catch (error) {
@@ -383,9 +385,58 @@ console.log(response.data);
       </div>
     </form>
   );
+ 
+};
+   
+   
+   
+  const DataList = () => {
+  const [data, setData] = useState([]);  // Inicia como array vazio
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    // Chamada à API para obter os dados
+    api.get('categoria')
+      .then(response => {
+        console.log(response.data);  // Verificar a estrutura dos dados retornados
+        setData(response.data.data);  // Acessar corretamente a propriedade "data" que contém o array
+        setLoading(false);
+      })
+      .catch(error => {
+        setError(error.message);
+        setLoading(false);
+      });
+  }, []);
+
+  // Exibir "Carregando..." enquanto a requisição está sendo feita
+  if (loading) return <p>Carregando...</p>;
+
+  // Exibir a mensagem de erro, se ocorrer
+  if (error) return <p>Erro: {error}</p>;
+
+  return (
+    <ul>
+      {/* Verifica se 'data' é um array antes de usar map */}
+      {Array.isArray(data) ? (
+        data.map(item => (
+          <li key={item.id}>
+            {item.id} - {item.nome} - {item.descricao}
+            <button onClick={() => alert(`Atualizar item ${item.id}`)}>Atualizar</button>
+          </li>
+        ))
+      ) : (
+        <p>Dados indisponíveis</p>
+      )}
+    </ul>
+  );
 };
 
 export default Usuario;
+
+
+
+
 
 
 /*
