@@ -173,7 +173,11 @@ const Login = () => {
               alert("Por favor, preencha todos os campos!");
               return;
             }
-        alert(JSON.stringify(data)) 
+        alert(JSON.stringify(data))
+        
+        //alert("Cadastro realizado com sucesso!") 
+       
+
        
         //if (data.value.trim() === '') {
           //alert('Campo não preenchido!');
