@@ -1,5 +1,8 @@
 /**/import React, { useState, useEffect } from "react";
 import api from "../../services/api";
+import ScheduleForm from "./ScheduleForm";
+import ScheduleList from "./ScheduleList";
+import './agenda.css';
 
 const DataManagement = () => {
   const [data, setData] = useState([]); // Armazena a lista de categorias
@@ -54,6 +57,13 @@ const DataManagement = () => {
     }
   };
 
+  const Agendar = () => {
+    const [appointments, setAppointments] = useState([]);
+  const addAppointment = (appointment) => {
+  setAppointments([...appointments, appointment]);
+  };
+  };
+
   // Função para habilitar a edição de um item
   const handleEdit = (item) => {
     setIsEditing(true); // Ativa o modo de edição
@@ -75,8 +85,11 @@ const DataManagement = () => {
       .catch(error => setError(error.message));
   };
 
+  
+
   if (loading) return <p>Carregando...</p>; // Exibe um texto enquanto os dados estão carregando
   if (error) return <p>Erro: {error}</p>; // Exibe uma mensagem de erro, caso ocorra
+
 
   return (
     <div className="app-container">
@@ -134,8 +147,19 @@ const DataManagement = () => {
           ))}
         </ul>
       </div>
+
+    <div>
+      <br />
+    <h1>Agendador de Aulas</h1>
+    <ScheduleForm addAppointment={addAppointment} />
+    <ScheduleList appointments={appointments} />
     </div>
+
+    </div>
+    
   );
+
+ 
 };
 
 export default DataManagement;
