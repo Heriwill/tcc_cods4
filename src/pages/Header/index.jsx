@@ -12,7 +12,7 @@ function Header() {
                 <nav className="nav-links">
                     <Link to="/" className="nav-item">Home</Link>
                     <span className="separator">|</span>
-                    <Link to="/listausuario" className="nav-item">Agenda</Link>
+                    <Link to="/agenda" className="nav-item">Agenda</Link>
                     <span className="separator">|</span>
                     <Link to="/login" className="nav-item">Login</Link>
                 </nav>
