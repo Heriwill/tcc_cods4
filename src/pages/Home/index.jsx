@@ -24,7 +24,7 @@ function Home(){
           </p>*/}
            </h1>
 
-           <h2 id='subtitulo'>Não sabe por onde começar?<a href="../Usuario" className='link'> Clique aqui!</a> Faça seu cadastro e aproveite para defrutar de todos os benefícios que a PowerFlex tem preparado para você! </h2>
+           <h2 id='subtitulo'>Não sabe por onde começar?<a href="../Usuario" className='link'> Clique aqui!</a> Faça seu cadastro e aproveite para desfrutar de todos os benefícios que a PowerFlex tem preparado para você! </h2>
 
             <p></p>
             <br /><br />

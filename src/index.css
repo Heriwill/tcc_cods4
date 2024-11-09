@@ -1,6 +1,6 @@
 .meio{
   background-color: black;
-  color: white;
+  --color: white;
 }
 
 body{
@@ -9,5 +9,6 @@ body{
   background-color: black;
   font-family: 'Times New Roman', Times, serif;
   overflow-x: hidden;
+  color: white;
 }
 

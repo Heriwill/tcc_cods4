@@ -1,7 +1,7 @@
-/**/import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import api from "../../services/api";
-import ScheduleForm from "./ScheduleForm";
-import ScheduleList from "./ScheduleList";
+//import ScheduleForm from "./ScheduleForm";
+//import ScheduleList from "./ScheduleList";
 import './agenda.css';
 
 const DataManagement = () => {
@@ -11,6 +11,7 @@ const DataManagement = () => {
   const [formData, setFormData] = useState({ nome: "", descricao: "" }); // Armazena os dados do formulário
   const [isEditing, setIsEditing] = useState(false); // Define se estamos no modo de edição
   const [editingId, setEditingId] = useState(null); // Armazena o ID do item sendo editado
+  //const [appointments, setAppointments] = useState([]); // Estado para armazenar os agendamentos
 
   // Carregar os dados da API ao montar o componente
   useEffect(() => {
@@ -19,12 +20,14 @@ const DataManagement = () => {
 
   const fetchData = () => {
     setLoading(true);
-    api.get('categoria')
+    api.get('categoria') // Substitua '/usuario' com o endpoint correto da sua API
       .then(response => {
+        console.log("Dados recebidos:", response.data); // Verifique o retorno da API
         setData(response.data.data); // Atualiza a lista com os dados retornados
         setLoading(false); // Desativa o carregamento
       })
       .catch(error => {
+        console.error("Erro ao buscar dados:", error); // Exibe erro no console
         setError(error.message); // Armazena a mensagem de erro
         setLoading(false);
       });
@@ -40,7 +43,7 @@ const DataManagement = () => {
     e.preventDefault();
     if (isEditing) {
       // Atualiza o item existente
-      api.put(`categoria/${editingId}`, formData)
+      api.put(`categoria/${editingId}`, formData) // Substitua `/usuario/${editingId}` com o endpoint correto
         .then(() => {
           fetchData(); // Recarregar a lista após edição
           resetForm(); // Limpar o formulário
@@ -48,7 +51,7 @@ const DataManagement = () => {
         .catch(error => setError(error.message));
     } else {
       // Cadastra um novo item
-      api.post('categoria', formData)
+      api.post('categoria', formData) // Substitua '/usuario' com o endpoint correto
         .then(() => {
           fetchData(); // Recarregar a lista após cadastro
           resetForm(); // Limpar o formulário
@@ -57,12 +60,10 @@ const DataManagement = () => {
     }
   };
 
-  const Agendar = () => {
-    const [appointments, setAppointments] = useState([]);
-  const addAppointment = (appointment) => {
-  setAppointments([...appointments, appointment]);
-  };
-  };
+  // Função para adicionar um agendamento
+  //const addAppointment = (appointment) => {
+   //setAppointments([...appointments, appointment]); // Atualiza o estado de agendamentos
+//};
 
   // Função para habilitar a edição de um item
   const handleEdit = (item) => {
@@ -80,17 +81,16 @@ const DataManagement = () => {
 
   // Função para deletar um item
   const handleDelete = (id) => {
-    api.delete(`categoria/${id}`)
+    api.delete(`categoria/${id}`) // Substitua `/usuario/${id}` com o endpoint correto
       .then(() => fetchData()) // Recarrega a lista após a exclusão
       .catch(error => setError(error.message));
   };
 
-  
+  // Se a API estiver carregando ou se houver erro, mostra mensagens apropriadas
+  if (loading) return <div>Carregando...</div>;
+  if (error) return <div>Erro: {error}</div>;
 
-  if (loading) return <p>Carregando...</p>; // Exibe um texto enquanto os dados estão carregando
-  if (error) return <p>Erro: {error}</p>; // Exibe uma mensagem de erro, caso ocorra
-
-
+  // Exibe os dados e o agendador
   return (
     <div className="app-container">
       {/* Seção do formulário de cadastro */}
@@ -139,7 +139,7 @@ const DataManagement = () => {
                 Editar
               </button>
 
-              {/* Botão de deletar, colocado junto ao botão de editar */}
+              {/* Botão de deletar */}
               <button onClick={() => handleDelete(item.id)} style={{ marginLeft: "10px", color: "red" }}>
                 Deletar
               </button>
@@ -148,21 +148,27 @@ const DataManagement = () => {
         </ul>
       </div>
 
-    <div>
-      <br />
-    <h1>Agendador de Aulas</h1>
-    <ScheduleForm addAppointment={addAppointment} />
-    <ScheduleList appointments={appointments} />
-    </div>
-
+      {/* Seção do agendador */}
+      {/*<div>
+        <br />
+        <h1>Agendador de Aulas</h1>
+        <ScheduleForm addAppointment={addAppointment} />
+        <ScheduleList appointments={appointments} />
+      </div>
+      */}
     </div>
     
   );
-
- 
 };
 
 export default DataManagement;
+
+/*
+
+ver o último código no chat do teams, para implementar o novo código com 
+a funcao de agendamento
+
+*/
 
 /*import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';

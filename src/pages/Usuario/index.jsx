@@ -421,6 +421,7 @@ const Usuario = () => {
     //const response = await api.post('categoria', { nome: vnome, descricao: vemail });
     console.log(response.data);
     alert('Cadastro realizado com sucesso!'); // Mensagem de sucesso
+    window.location.href = "/"; // Exemplo
   } catch (error) {
     // Verificando se a resposta do erro está definida
     if (error.response) {

@@ -19,9 +19,11 @@ function RoutesApp(){
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/signin" element={<Signin/>}/>
                 <Route path="/signup" element={<Signup/>}/>
-                //Assistir o video a parir do minuto 9
-                //Video: sistema de Login com React.JS!
-                //Route path="/listausuario" element=ListaUsuario
+                {/* Assistir o vídeo a partir do minuto 9 */}
+                {/* Video: sistema de Login com React.JS! */}
+                {/* Para adicionar a rota para ListaUsuario, descomente abaixo: */}
+                {/* <Route path="/listausuario" element={<ListaUsuario />} /> */}
+
             </Routes>
         
     

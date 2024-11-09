@@ -4,6 +4,7 @@ body {
     background-color: #f9f9f9;
     margin: 0;
     padding: 20px;
+    color: white;
   }
  
   /* Estilos para o container da lista */
@@ -14,6 +15,7 @@ body {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    color: white;
   }
  
   /* Estilos para a lista */
