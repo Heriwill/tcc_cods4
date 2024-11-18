@@ -1,106 +1,98 @@
-.app-container {
-    max-width: 600px; /* Largura máxima do contêiner */
-    margin-top: 10%;
-    --position: fixed;
-    --margin: 1 auto; /* Centraliza o contêiner na página */
-    padding: 20px; /* Espaçamento interno do contêiner */
-    
-  }
-
-/* Estilo para o grupo de formulário */
-.form-group {
-    max-width: 400px; /* Largura máxima do grupo de formulário */
-    margin: 0 auto; /* Centraliza o grupo de formulário na página */
-    padding: 20px; /* Espaçamento interno do grupo de formulário */
-    border: 1px solid #ccc; /* Borda sólida com cor cinza */
-    border-radius: 8px; /* Borda arredondada */
-   
-  }
-  
-  /* Estilo para os campos de entrada de texto */
-  .form-group input[type="text"],
-  .form-group input[type="email"],
-  .form-group input[type="password"] {
-    width: 100%; /* Largura total do campo de entrada */
-    margin-bottom: 10px; /* Espaçamento inferior */
-    padding: 10px; /* Espaçamento interno do campo */
-    border: 1px solid #ccc; /* Borda sólida com cor cinza */
-    border-radius: 4px; /* Borda arredondada */
-    
-  }
-  
-  /* Estilo para o botão de envio */
-  .form-group button {
-    width: 100%; /* Largura total do botão */
-    padding: 10px; /* Espaçamento interno do botão */
-    background-color: #007bff; /* Cor de fundo azul */
-    color: #fff; /* Cor do texto branco */
-    border: none; /* Sem borda */
-    border-radius: 4px; /* Borda arredondada */
-    cursor: pointer; /* Cursor de ponteiro ao passar por cima */
-  }
-  
-  /* Estilo para o link de esqueceu a senha */
-  .form-group .forgot-password {
-    text-align: right; /* Alinha o texto à direita */
-  }
-  
-  /* Estilo para as mensagens de erro */
-  .form-group .error-message {
-    color: red; /* Cor do texto vermelho */
-  }
-
-
-/* Estilo para o link de esqueceu a senha */
-#app-container .forgot-password {
-  text-align: right; /* Alinha o texto à direita */
+.container {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 40px;
 }
 
-.icon{
-  position: absolute;
-  margin-top: 1%;
-  color: black;
+.container h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #ffff;
 }
 
-#imgfundo{
+.container .input-field {
   position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px auto;
+}
+
+.input-field input {
+  width: 100%;
   height: 100%;
-  width: 105.4%;
-  margin-top: 0%;
-  margin-left: -4.2%;
-  --padding: 0.1%;
-  background-size: cover;
-  filter: blur(5px);
-  z-index: -1; 
-  --background-image: none;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 25px;
 }
 
-.logingeral{
-  color: beige;
+.input-field input::placeholder {
+  color: #fff;
 }
 
-span{
-  color: rgb(165, 103, 205);
+.input-field .icon {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #fff;
 }
 
-/* src/index.css 
-body {
-  font-family: Arial, sans-serif;
+.container .recall-forget {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f5f5f5;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
 }
 
-form {
-  background: white;
-  padding: 20px;
-  border-radius: 5px;
+.recall-forget label input {
+  accent-color: #fff;
+  margin-right: 4px;
+}
+
+.recall-forget a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.recall-forget a:hover {
+  text-decoration: underline;
+}
+
+.container button {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  text-shadow: none;
 }
 
-div {
-  margin-bottom: 15px;
+.container .signup-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
 }
-*/
+
+.signup-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link p a:hover {
+  text-decoration: underline;
+}

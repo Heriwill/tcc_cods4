@@ -234,7 +234,7 @@ export default Login;
 
 
 
-
+/*
 import { useForm } from "react-hook-form";
 import { FaUser, FaLock } from "react-icons/fa";
 import './login.css';
@@ -318,8 +318,118 @@ const Login = () => {
 export default Login;
 
 
+*/
 
 
+import { useState } from "react";
+import { FaUser, FaLock } from "react-icons/fa";
+import "./login.css";
+
+const Login = () => {
+  // Estados para armazenar as entradas do usuário e status de erro/sucesso
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState(""); // Para mensagens de erro
+  const [loading, setLoading] = useState(false); // Para controlar o carregamento
+
+  // Função que é chamada quando o formulário é enviado
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Impede que a página seja recarregada
+
+    // Limpa mensagens de erro antes de enviar
+    setErrorMessage("");
+    setLoading(true);
+
+    try {
+      // Envia a requisição para a API
+      const response = await api.fetch("/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json", // Certifique-se de que o backend aceite JSON
+        },
+        body: JSON.stringify({ email: username, password }), // Envia as credenciais no corpo da requisição
+      });
+
+      // Verifica a resposta da API
+      if (response.ok) {
+        const data = await response.json(); // Pega os dados da resposta (pode ser um token ou dados do usuário)
+        console.log("Login bem-sucedido:", data);
+
+        // Exemplo de como armazenar o token de autenticação (se houver)
+        localStorage.setItem("authToken", data.token); // Armazena o token no localStorage
+
+        // Redireciona o usuário após login (por exemplo, para o dashboard)
+        window.location.href = "/dashboard"; // Altere para a rota da sua aplicação
+      } else {
+        const errorData = await response.json();
+        setErrorMessage(errorData.message || "Erro ao fazer login, tente novamente.");
+      }
+    } catch (error) {
+      console.error("Erro ao realizar login:", error);
+      setErrorMessage("Ocorreu um erro ao tentar se conectar com o servidor.");
+    } finally {
+      setLoading(false); // Desativa o estado de carregamento
+    }
+  };
+
+  return (
+    <div className="container">
+      <form onSubmit={handleSubmit}>
+        <h1>Acesse o sistema</h1>
+
+        {/* Campo de e-mail */}
+        <div className="input-field">
+          <input
+            type="text"
+            placeholder="E-mail"
+            required
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <FaUser className="icon" />
+        </div>
+
+        {/* Campo de senha */}
+        <div className="input-field">
+          <input
+            type="password"
+            placeholder="Senha"
+            required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <FaLock className="icon" />
+        </div>
+
+        {/* Exibe mensagem de erro caso haja */}
+        {errorMessage && <div className="error-message">{errorMessage}</div>}
+
+        {/* Caixa de verificação "Lembre de mim" */}
+        <div className="recall-forget">
+          <label>
+            <input type="checkbox" />
+            Lembre de mim
+          </label>
+          <a href="#">Esqueceu sua senha?</a>
+        </div>
+
+        {/* Botão de login */}
+        <button type="submit" disabled={loading}>
+          {loading ? "Carregando..." : "Login"}
+        </button>
+
+        {/* Link para a página de cadastro */}
+        <div className="signup-link">
+          <p>
+            Não tem uma conta? <a href="#">Registar</a>{" "}
+          </p>
+        </div>
+      </form>
+    </div>
+  );
+};
+
+export default Login;
 
 /*
 import React, { useState } from 'react';

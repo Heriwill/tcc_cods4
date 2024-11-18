@@ -263,9 +263,12 @@
     color: white;
 }
 
+
+
 .cardetexto{
     --color: plum;
-    color: beige;
+    --color: beige;
+    color: white;
     font-size: 110%;
     text-shadow: 
     -1px -1px 0 black,
