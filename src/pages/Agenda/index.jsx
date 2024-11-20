@@ -81,7 +81,7 @@ const DataManagement = () => {
 
   // Função para deletar um item
   const handleDelete = (id) => {
-    api.delete(`categoria    /${id}`) // Substitua `/usuario/${id}` com o endpoint correto
+    api.delete(`categoria/${id}`) // Substitua `/usuario/${id}` com o endpoint correto
       .then(() => fetchData()) // Recarrega a lista após a exclusão
       .catch(error => setError(error.message));
   };

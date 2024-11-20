@@ -234,8 +234,8 @@ export default Login;
 
 
 
-/*
-import { useForm } from "react-hook-form";
+
+/*import { useForm } from "react-hook-form";
 import { FaUser, FaLock } from "react-icons/fa";
 import './login.css';
 import api from "../../services/api";  // Certifique-se de que está configurado corretamente
@@ -245,26 +245,21 @@ const Login = () => {
 
   const onSubmit = async (data) => {
     try {
-      if (!data.email || !data.senha) {
+      if (!data.login || !data.password) {
         alert("Por favor, preencha todos os campos!");
         return;
       }
 
-      const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!emailRegex.test(data.email)) {
-      setError('Por favor, insira um email válido.');
-      return;
-    }
-
       // Fazendo a requisição para o backend com os dados do usuário
-      const response = await api.post("/usuario", {
-        email: data.email,
-        senha: data.senha
+      const response = await api.post("/api/login", {
+        email: data.login,
+        senha: data.password
       });
 
       // Verifica se a resposta é bem-sucedida (código HTTP 200)
       if (response.status === 200) {
         alert("Login bem-sucedido!");
+        localStorage.setItem('token', data.token);
         // Redireciona o usuário para a página principal ou dashboard
         // redirecionamento para a página inicial (ajuste conforme sua lógica de navegação)
         window.location.href = "/home"; // Exemplo
@@ -282,12 +277,12 @@ const Login = () => {
       <div className="app-container">
         <form onSubmit={handleSubmit(onSubmit)} className="form-group">
           <div className="form-group">
-            <label>E-mail</label>
+            <label>Login</label>
             <input 
-              type="email" 
-              placeholder="Seu Email" 
+              type="text" 
+              placeholder="Seu Login" 
               maxLength={40}  
-              {...register("email", { required: "Este campo é obrigatório" })} 
+              {...register("login", { required: "Este campo é obrigatório" })} 
             />   
             {errors.email && <span>{errors.email.message}</span>}
             <FaUser className="icon" />
@@ -299,9 +294,94 @@ const Login = () => {
               type="password" 
               placeholder="Sua Senha" 
               maxLength={10} 
-              {...register("senha", { required: "Este campo é obrigatório" })}
+              {...register("password", { required: "Este campo é obrigatório" })}
             />
             {errors.senha && <span>{errors.senha.message}</span>}
+            <FaLock className="icon" />
+          </div>
+          
+          <div className="form-group">
+            <button type="submit">Entrar</button>
+            Não tem uma conta? <a href="../usuario">Cadastre-se</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+}
+
+export default Login; */
+
+import { useForm } from "react-hook-form";
+import { FaUser , FaLock } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import './login.css';
+import api from "../../services/api";  // Certifique-se de que está configurado corretamente
+
+const Login = () => {
+  const { register, handleSubmit, formState: { errors } } = useForm();
+  const navigate = useNavigate(); // Hook para navegação
+
+  const onSubmit = async (data) => {
+    try {
+      if (!data.login || !data.password) {
+        alert("Por favor, preencha todos os campos!");
+        return;
+      }
+      // Fazendo a requisição para o backend com os dados do usuário
+      const response = await api.post("/api/login", {
+        login: data.login,
+        senha: data.password
+      });
+
+      console.log(response);
+
+      const token = response.data; // Alterado para capturar o token corretamente
+      // Armazena o token no localStorage
+      localStorage.setItem('token', token);
+
+      // Verifica se a resposta é bem-sucedida (código HTTP 200)
+      if (response.status === 200) {
+        alert("Login bem-sucedido!");
+        
+        
+
+        // Redireciona o usuário para a página principal ou dashboard
+        navigate("/usuario");// Exemplo
+      } else {
+        alert("Credenciais inválidas! Por favor, tente novamente.");
+      }
+    } catch (error) {
+      console.error("Erro ao realizar login:", error);
+      alert("Ocorreu um erro ao tentar realizar o login. Tente novamente mais tarde.");
+    }
+  };
+
+  return (
+    <div className="logingeral">
+      <div className="app-container">
+        <form onSubmit={handleSubmit(onSubmit)} className="form-group">
+          <div className="form-group">
+            <label>Login</label>
+            <input 
+              type="text" 
+              placeholder="Seu Login" 
+              maxLength={40}  
+              {...register("login", { required: "Este campo é obrigatório" })} 
+            />   
+            {errors.login && <span>{errors.login.message}</span>} {/* Corrigido de errors.email para errors.login */}
+            <FaUser  className="icon" />
+          </div>
+          
+          <div className="form-group">
+            <label>Senha</label>
+            <input 
+              type="password" 
+              placeholder="Sua Senha" 
+              maxLength={10} 
+              {...register("password", { required: "Este campo é obrigatório" })}
+            />
+            {errors.password && <span>{errors.password.message}</span>} {/* Corrigido de errors.senha para errors.password */}
             <FaLock className="icon" />
           </div>
           
@@ -318,118 +398,8 @@ const Login = () => {
 export default Login;
 
 
-*/
 
 
-import { useState } from "react";
-import { FaUser, FaLock } from "react-icons/fa";
-import "./login.css";
-
-const Login = () => {
-  // Estados para armazenar as entradas do usuário e status de erro/sucesso
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState(""); // Para mensagens de erro
-  const [loading, setLoading] = useState(false); // Para controlar o carregamento
-
-  // Função que é chamada quando o formulário é enviado
-  const handleSubmit = async (event) => {
-    event.preventDefault(); // Impede que a página seja recarregada
-
-    // Limpa mensagens de erro antes de enviar
-    setErrorMessage("");
-    setLoading(true);
-
-    try {
-      // Envia a requisição para a API
-      const response = await api.fetch("/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json", // Certifique-se de que o backend aceite JSON
-        },
-        body: JSON.stringify({ email: username, password }), // Envia as credenciais no corpo da requisição
-      });
-
-      // Verifica a resposta da API
-      if (response.ok) {
-        const data = await response.json(); // Pega os dados da resposta (pode ser um token ou dados do usuário)
-        console.log("Login bem-sucedido:", data);
-
-        // Exemplo de como armazenar o token de autenticação (se houver)
-        localStorage.setItem("authToken", data.token); // Armazena o token no localStorage
-
-        // Redireciona o usuário após login (por exemplo, para o dashboard)
-        window.location.href = "/dashboard"; // Altere para a rota da sua aplicação
-      } else {
-        const errorData = await response.json();
-        setErrorMessage(errorData.message || "Erro ao fazer login, tente novamente.");
-      }
-    } catch (error) {
-      console.error("Erro ao realizar login:", error);
-      setErrorMessage("Ocorreu um erro ao tentar se conectar com o servidor.");
-    } finally {
-      setLoading(false); // Desativa o estado de carregamento
-    }
-  };
-
-  return (
-    <div className="container">
-      <form onSubmit={handleSubmit}>
-        <h1>Acesse o sistema</h1>
-
-        {/* Campo de e-mail */}
-        <div className="input-field">
-          <input
-            type="text"
-            placeholder="E-mail"
-            required
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          <FaUser className="icon" />
-        </div>
-
-        {/* Campo de senha */}
-        <div className="input-field">
-          <input
-            type="password"
-            placeholder="Senha"
-            required
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <FaLock className="icon" />
-        </div>
-
-        {/* Exibe mensagem de erro caso haja */}
-        {errorMessage && <div className="error-message">{errorMessage}</div>}
-
-        {/* Caixa de verificação "Lembre de mim" */}
-        <div className="recall-forget">
-          <label>
-            <input type="checkbox" />
-            Lembre de mim
-          </label>
-          <a href="#">Esqueceu sua senha?</a>
-        </div>
-
-        {/* Botão de login */}
-        <button type="submit" disabled={loading}>
-          {loading ? "Carregando..." : "Login"}
-        </button>
-
-        {/* Link para a página de cadastro */}
-        <div className="signup-link">
-          <p>
-            Não tem uma conta? <a href="#">Registar</a>{" "}
-          </p>
-        </div>
-      </form>
-    </div>
-  );
-};
-
-export default Login;
 
 /*
 import React, { useState } from 'react';

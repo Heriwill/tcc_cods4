@@ -388,10 +388,11 @@ import { Link } from 'react-router-dom';
 import './usuario.css';
 //import { useState } from "react";
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import api from "../../services/api";
 
-
 const Usuario = () => {
+  const navigate = useNavigate();
   const [vnome, setNome] = useState('');
   const [vnascimento, setNascimento] = useState('');
   const [vcpf, setCPF] = useState('');
@@ -399,16 +400,26 @@ const Usuario = () => {
   const [vgenero, setGenero] = useState('');
   const [vemail, setEmail] = useState('');
   const [vsenha, setSenha] = useState('');
-
+ 
   const { handleSubmit } = useForm();
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      navigate('/');
+    }
+  }, [navigate]);
 
   const onSubmit = async () => {
+    const token = localStorage.getItem('token'); // Adicione esta linha
     try {
       {/*if (!vnome || !vnascimento || !vcpf || !vtelefone || !vgenero || !vemail || !vsenha) {*/}
       if (!vnome || !vcpf || !vemail || !vsenha) {
         alert("Por favor, preencha todos os campos!");
         return;
-      }
+      } 
+
+
+
 
       // Verifica se os campos CPF, telefone e data de nascimento estão completos
       {/*if (vcpf.length !== 11 || vtelefone.length !== 11 || vnascimento.length !== 10) {
@@ -417,13 +428,20 @@ const Usuario = () => {
         return;
       }
     */}
-    const response = await api.post('/usuario', { nome: vnome, cpf: vcpf, email: vemail, password: vsenha });
+    const response = await api.post('/api/alunos/registrar', { nome: vnome, cpf: vcpf, email: vemail, senha: vsenha}, {
+      headers: {
+        Authorization: `Bearer ${token}` // Adiciona o token ao cabeçalho
+      }
+    });
     //const response = await api.post('categoria', { nome: vnome, descricao: vemail });
+    
     console.log(response.data);
-    alert('Cadastro realizado com sucesso!'); // Mensagem de sucesso
-    window.location.href = "/"; // Exemplo
+    alert(token)
+    alert('Cadastro realizado com sucesso!'); 
+    window.location.href = "/";
   } catch (error) {
-    // Verificando se a resposta do erro está definida
+    
+
     if (error.response) {
       alert('Erro ao cadastrar: ' + error.response.data.message || 'Erro desconhecido');
       console.error('Erro detalhado:', error.response.data); // Log do erro
@@ -433,7 +451,6 @@ const Usuario = () => {
     } else {
       alert('Erro ao cadastrar: ' + error.message);
       console.error('Erro:', error.message);
- // Mensagem de erro
     }
   }
 }
@@ -529,18 +546,23 @@ console.log(response.data);
           <input type="password" placeholder="Informe a sua Senha" value={vsenha} onChange={(e) => setSenha(e.target.value)} maxLength="20" />
         </div>
       </div>
-
+      <div>
+  
+      </div>
       <div className="form-group">
         <button type="submit">Criar o seu Cadastro</button>
       </div>
     </form>
+    
   );
- 
+
 };
+export default Usuario; 
+
    
    
    
-  const DataList = () => {
+  /*const DataList = () => {
   const [data, setData] = useState([]);  // Inicia como array vazio
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -567,7 +589,7 @@ console.log(response.data);
 
   return (
     <ul>
-      {/* Verifica se 'data' é um array antes de usar map */}
+      { Verifica se 'data' é um array antes de usar map }
       {Array.isArray(data) ? (
         data.map(item => (
           <li key={item.id}>
@@ -582,7 +604,7 @@ console.log(response.data);
   );
 };
 
-export default Usuario;
+export default Usuario; 
 
 
 
